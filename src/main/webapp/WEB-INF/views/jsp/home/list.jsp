@@ -5,11 +5,11 @@
 <div class="container-fluid" id="container-list">
 	<c:forEach begin="1" end="4">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<div class="panel-group">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<spring:url value="/resources/img/801.jpg" var="ad1Img" />
+							<spring:url value="/resources/images/801.jpg" var="ad1Img" />
 							<img src="${ad1Img}" class="img-responsive img-rounded center-block" alt="Cinque Terre">
 						</div>
 						<div class="panel-footer">
@@ -38,11 +38,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<div class="panel-group">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<spring:url value="/resources/img/802.jpg" var="ad2Img" />
+							<spring:url value="/resources/images/802.jpg" var="ad2Img" />
 							<img src="${ad2Img}" class="img-responsive img-rounded center-block" alt="Cinque Terre">
 						</div>
 						<div class="panel-footer">
@@ -71,11 +71,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<div class="panel-group">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<spring:url value="/resources/img/803.jpg" var="ad3Img" />
+							<spring:url value="/resources/images/803.jpg" var="ad3Img" />
 							<img src="${ad3Img}" class="img-responsive img-rounded center-block" alt="Cinque Terre">
 						</div>
 						<div class="panel-footer">

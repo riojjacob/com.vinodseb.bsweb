@@ -8,34 +8,15 @@
 <title>Bootstrap Example</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<spring:url value="/resources/css/custom.css" var="customCss" />
+
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="${customCss}">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<style type="text/css">
-#navbar-main .navbar-brand, #navbar-main .nav > li > a {
-	line-height: 60px;
-	vertical-align: middle;
-	color: #FFFFFF;
-}
-#navbar-main {
-   background-color: rgba(20,20,20,0.90);
-   background: rgba(20,20,20,0.90);
-   border-color: rgba(20,20,20,0.90);
-}
-#carousel-inner-slide {
-	max-height:900px;
-}
-#panel-heading-main {
-	padding: 0px;
-}
-#panel-main {
-	border: 0px;
-	margin: 0px;
-}
-#container-list, #container-navbar {
-	max-width: 1100px;
-}
-</style>
+
 </head>
 <body>
 	<div class="panel panel-default" id="panel-main">
@@ -52,6 +33,8 @@
 					</div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav">
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#">Home</a></li>
 							<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Buy<span class="caret"></span></a>
 								<ul class="dropdown-menu">
@@ -62,8 +45,6 @@
 							</li>
 							<li><a href="#">Rent</a></li>
 							<li><a href="#">Sell</a></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#"><span class="glyphicon glyphicon-user"></span> Login</a></li>
 						</ul>
 					</div>
@@ -82,19 +63,19 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox" id="carousel-inner-slide">
 					<div class="item active">
-						<spring:url value="/resources/img/main1.jpg" var="main1Img" />
+						<spring:url value="/resources/images/main1.jpg" var="main1Img" />
 						<img class="img-responsive" src="${main1Img}" alt="Chania">
 					</div>
 					<div class="item">
-						<spring:url value="/resources/img/main2.jpg" var="main2Img" />
+						<spring:url value="/resources/images/main2.jpg" var="main2Img" />
 						<img class="img-responsive" src="${main2Img}" alt="Chania">
 					</div>
 					<div class="item">
-						<spring:url value="/resources/img/main3.jpg" var="main3Img" />
+						<spring:url value="/resources/images/main3.jpg" var="main3Img" />
 						<img class="img-responsive" src="${main3Img}" alt="Flower">
 					</div>
 					<div class="item">
-						<spring:url value="/resources/img/main4.jpg" var="main4Img" />
+						<spring:url value="/resources/images/main4.jpg" var="main4Img" />
 						<img class="img-responsive" src="${main4Img}" alt="Flower">
 					</div>
 				</div>

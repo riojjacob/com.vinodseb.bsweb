@@ -1,0 +1,36 @@
+
+#navbar-main .navbar-brand, #navbar-main .nav > li > a {
+	line-height: 60px;
+	vertical-align: middle;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+#navbar-main {
+   background-color: rgba(20,20,20,0.90);
+   background: rgba(20,20,20,0.90);
+   border-color: rgba(20,20,20,0.90);
+   margin: 0px;
+   heignt: 60px;
+}
+
+#carousel-inner-slide {
+	max-height:600px;
+}
+
+#panel-heading-main {
+	padding: 0px;
+}
+
+#panel-main {
+	border: 0px;
+	margin: 0px;
+}
+
+#container-list, #container-navbar {
+	max-width: 1100px;
+}
+
+#container-list .panel-heading {
+	padding: 4px 4px 4px 4px;
+}
