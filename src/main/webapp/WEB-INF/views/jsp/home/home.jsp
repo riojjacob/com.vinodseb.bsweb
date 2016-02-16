@@ -51,7 +51,7 @@
 				</div>
 			</nav>
 
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -64,19 +64,19 @@
 				<div class="carousel-inner" role="listbox" id="carousel-inner-slide">
 					<div class="item active">
 						<spring:url value="/resources/images/main1.jpg" var="main1Img" />
-						<img class="img-responsive" src="${main1Img}" alt="Chania">
+						<img class="img-responsive" src="${main1Img}" alt="Image1">
 					</div>
 					<div class="item">
 						<spring:url value="/resources/images/main2.jpg" var="main2Img" />
-						<img class="img-responsive" src="${main2Img}" alt="Chania">
+						<img class="img-responsive" src="${main2Img}" alt="Image2">
 					</div>
 					<div class="item">
 						<spring:url value="/resources/images/main3.jpg" var="main3Img" />
-						<img class="img-responsive" src="${main3Img}" alt="Flower">
+						<img class="img-responsive" src="${main3Img}" alt="Image3">
 					</div>
 					<div class="item">
 						<spring:url value="/resources/images/main4.jpg" var="main4Img" />
-						<img class="img-responsive" src="${main4Img}" alt="Flower">
+						<img class="img-responsive" src="${main4Img}" alt="Image4">
 					</div>
 				</div>
 

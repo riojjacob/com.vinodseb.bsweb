@@ -1,36 +1,33 @@
 
-#navbar-main .navbar-brand, #navbar-main .nav > li > a {
-	line-height: 60px;
-	vertical-align: middle;
-	color: #FFFFFF;
-	font-size: 16px;
-}
-
+/* set navbar color */
 #navbar-main {
    background-color: rgba(20,20,20,0.90);
    background: rgba(20,20,20,0.90);
    border-color: rgba(20,20,20,0.90);
-   margin: 0px;
-   heignt: 60px;
 }
 
+/* set carousel height */
 #carousel-inner-slide {
 	max-height:600px;
 }
 
+/* remove carousel padding */
 #panel-heading-main {
 	padding: 0px;
 }
 
+/* remove main panel borders and margins */
 #panel-main {
 	border: 0px;
 	margin: 0px;
 }
 
+/* set list's max width */
 #container-list, #container-navbar {
 	max-width: 1100px;
 }
 
+/* set list item image containers padding */
 #container-list .panel-heading {
 	padding: 4px 4px 4px 4px;
 }
