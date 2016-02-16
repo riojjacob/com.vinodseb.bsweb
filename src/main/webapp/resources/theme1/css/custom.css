@@ -27,7 +27,19 @@
 	max-width: 1100px;
 }
 
-/* set list item image containers padding */
-#container-list .panel-heading {
+/* set list item image containers padding TODO remove this */
+/* #container-list .panel-heading {
 	padding: 4px 4px 4px 4px;
+}
+ */
+#container-list table {
+	margin: 0px;
+}
+
+#panel-body-search {
+	background-color: rgba(20,20,20,0.90);
+}
+
+#container-list .row .well {
+	padding: 4px;
 }
