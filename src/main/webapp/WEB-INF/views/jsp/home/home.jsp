@@ -90,6 +90,107 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
+			
+			<div class="well" id="well-filter">
+				<div class="row">
+						<div class="col-sm-3">
+							<select class="form-control" id="sel1">
+								<option disabled="disabled" selected="selected">City</option>
+								<option>Dubai</option>
+								<option>Abu Dhabi</option>
+								<option>Sharjah</option>
+								<option>Ajman</option>
+								<option>Fujairah</option>
+								<option>Ras al-Khaimah</option>
+								<option>Umm al-Qaiwainh</option>
+							</select>
+						</div>
+						<div class="col-sm-3">
+							<select class="form-control" id="sel1">
+								<option disabled="disabled" selected="selected">Area</option>
+								<option>Abu Shagara</option>
+								<option>Al Mahatta</option>
+								<option>Al Majaz 1</option>
+								<option>Al Majaz 2</option>
+								<option>Al Majaz 3</option>
+								<option>Al Nad</option>
+								<option>Al Nahda</option>
+								<option>Al Layyeh</option>
+								<option>Al Taawun</option>
+								<option>Al Yarmook</option>
+								<option>Al Qasba</option>
+								<option>Al Rolla</option>
+								<option>Musallah</option>
+								<option>Al Qulayya</option>
+								<option>Al Mujarrah</option>
+								<option>Muwailah</option>
+							</select>
+						</div>
+						<div class="col-sm-3">
+							<select class="form-control">
+							  <option disabled="disabled" selected="selected">Property Type</option>
+							  <option value="apartments">Apartments</option>
+							  <option value="commercial-building-for-sale">Commercial Building for Sale</option>
+							  <option value="commercial-land">Commercial Land</option>
+							  <option value="commercial-space-for-rent">Commercial Space for Rent</option>
+							  <option value="farm-land">Farm Land</option>
+							  <option value="flat-for-rent">Flat for Rent</option>
+							  <option value="flats">Flats</option>
+							  <option value="house-for-rent">House For Rent</option>
+							  <option value="house-for-sale">House For Sale</option>
+							  <option value="other-services">Other Services</option>
+							  <option value="residential-land">Residential Land</option>
+							  <option value="rubber-estate">Rubber Estate</option>
+							  <option value="shopping-complex">Shopping Complex</option>
+							  <option value="villas">Villas</option>
+							</select>
+						</div>
+						<div class="col-sm-3 text-right">
+							<a href="javascript://" class="btn btn-default"  data-toggle="modal" data-target="#searchModal1"><span class="glyphicon glyphicon-cog"></span></a>
+        				</div>
+        				<!-- Modal -->
+						<div id="searchModal1" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-sm">
+								<form role="form">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Advanced Search Options</h4>
+									</div>
+									<div class="modal-body">
+										<div class="form-group">
+											<label for="usr">City</label>
+											<select class="form-control" id="sel1">
+												<option disabled="disabled" selected="selected">City</option>
+												<option>Dubai</option>
+												<option>Abu Dhabi</option>
+												<option>Sharjah</option>
+												<option>Ajman</option>
+												<option>Fujairah</option>
+												<option>Ras al-Khaimah</option>
+												<option>Umm al-Qaiwainh</option>
+											</select>
+										</div>
+										<div class="form-group">
+										  <label for="usr">Name</label>
+										  <input type="text" class="form-control" id="usr">
+										</div>
+										<div class="form-group">
+										  <label for="pwd">Password</label>
+										  <input type="password" class="form-control" id="pwd">
+										</div>								
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary" data-dismiss="modal">Search</button>
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+								</form>
+							</div>
+						</div>
+						<!-- End Modal -->
+				</div>
+			</div>
 		</div>
 		<div class="panel-body">
 			<jsp:include page="list.jsp"></jsp:include>

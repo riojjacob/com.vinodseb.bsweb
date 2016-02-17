@@ -3,56 +3,6 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <div class="container-fluid" id="container-list">
-
-	<div class="well">
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="sel1">Location</label>
-					<select class="form-control" id="sel1">
-						<option>Dubai</option>
-						<option>Sharjah</option>
-						<option>Abu Dhabi</option>
-						<option>Ras Al Khaimah</option>
-					</select>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="sel1">Property Type</label> 
-					<select class="form-control">
-					  <option disabled="disabled" selected="selected">Property Type</option>
-					  <option value="apartments">Apartments</option>
-					  <option value="commercial-building-for-sale">Commercial Building for Sale</option>
-					  <option value="commercial-land">Commercial Land</option>
-					  <option value="commercial-space-for-rent">Commercial Space for Rent</option>
-					  <option value="farm-land">Farm Land</option>
-					  <option value="flat-for-rent">Flat for Rent</option>
-					  <option value="flats">Flats</option>
-					  <option value="house-for-rent">House For Rent</option>
-					  <option value="house-for-sale">House For Sale</option>
-					  <option value="other-services">Other Services</option>
-					  <option value="residential-land">Residential Land</option>
-					  <option value="rubber-estate">Rubber Estate</option>
-					  <option value="shopping-complex">Shopping Complex</option>
-					  <option value="villas">Villas</option>
-					</select>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="sel1">Select Location</label>
-					<select class="form-control" id="sel1">
-						<option>Dubai</option>
-						<option>Sharjah</option>
-						<option>Abu Dhabi</option>
-						<option>Ras Al Khaimah</option>
-					</select>
-				</div>
-			</div>
-		</div>
-	</div>
-	
 	<c:forEach begin="1" end="4">
 	<div class="row">
 		<div class="col-sm-4">
@@ -285,8 +235,8 @@
 	</div>
 	</c:forEach>
 
-	<div  class="text-center">
-		<ul class="pagination pagination-lg">
+	<div class="text-center">
+		<ul class="pagination">
 			<li class="active"><a href="#">1</a></li>
 			<li><a href="#">2</a></li>
 			<li><a href="#">3</a></li>
