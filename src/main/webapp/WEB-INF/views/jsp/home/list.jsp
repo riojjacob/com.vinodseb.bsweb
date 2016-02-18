@@ -9,8 +9,17 @@
 			<spring:url value="/resources/images/801.jpg" var="ad1Img" />
 			
 			<div class="well">
-				<div>
-					<a href="javascript://" data-toggle="modal" data-target="#adModal1">
+				<div class="image">
+					<div class="dropdown">
+						<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" >
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="#">Quick View</a></li>
+							<li><a href="#">Detailed View</a></li>
+						</ul>
+					</div>
+					<a href="#" data-toggle="modal" data-target="#adModal1">
 						<img src="${ad1Img}" class="img-responsive img-rounded center-block" alt="Cinque Terre">
 					</a>
 				</div>
@@ -36,7 +45,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<div class="text-right"><button type="button" class="btn btn-primary btn-sm" onclick="window.location.href='property'">View</button></div>
+					<div class="text-right"></div>
 				</div>
 			</div>
 			
@@ -85,8 +94,17 @@
 		<div class="col-sm-4">
 			<spring:url value="/resources/images/802.jpg" var="ad2Img" />
 			<div class="well">
-				<div>
-					<a href="javascript://" data-toggle="modal" data-target="#adModal2">
+				<div class="image">
+					<div class="dropdown">
+						<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" >
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="#">Quick View</a></li>
+							<li><a href="#">Detailed View</a></li>
+						</ul>
+					</div>
+					<a href="#" data-toggle="modal" data-target="#adModal2">
 						<img src="${ad2Img}" class="img-responsive img-rounded center-block" alt="Cinque Terre">
 					</a>
 				</div>
@@ -112,7 +130,6 @@
 							</tr>
 						</tbody>
 					</table>
-					<div class="text-right"><button type="button" class="btn btn-primary btn-sm" onclick="window.location.href='property'">View</button></div>
 				</div>
 			</div>
 			<!-- Modal -->
@@ -160,8 +177,17 @@
 		<div class="col-sm-4">
 			<spring:url value="/resources/images/803.jpg" var="ad3Img" />
 			<div class="well">
-				<div>
-					<a href="javascript://" data-toggle="modal" data-target="#adModal3">
+				<div class="image">
+					<div class="dropdown">
+						<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" >
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="#">Quick View</a></li>
+							<li><a href="#">Detailed View</a></li>
+						</ul>
+					</div>
+					<a href="#" data-toggle="modal" data-target="#adModal3">
 						<img src="${ad3Img}" class="img-responsive img-rounded center-block" alt="Cinque Terre">
 					</a>
 				</div>
@@ -187,7 +213,6 @@
 							</tr>
 						</tbody>
 					</table>
-					<div class="text-right"><button type="button" class="btn btn-primary btn-sm" onclick="window.location.href='property'">View</button></div>
 				</div>
 			</div>
 			<!-- Modal -->

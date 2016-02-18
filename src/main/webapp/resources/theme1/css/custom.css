@@ -12,7 +12,8 @@
 }
 
 /* remove carousel padding */
-#panel-heading-main {
+#panel-heading-main,
+#panel-footer-main {
 	padding: 0px;
 	border: 0px;
 }
@@ -23,20 +24,22 @@
 	margin: 0px;
 }
 
-#well-filter {
+#well-filter, #well-footer {
 	margin: 0px;
 	border: 0px;
 	border-radius: 0;
-	text-align: center;
 }
 
-#well-filter .row {
-    display: inline-block;
-    width: 100%;
+#well-filter .row, 
+#well-footer .row {
+    margin: 0px auto;
 }
 
 /* set list's max width */
-#container-list, #container-navbar, #well-filter .row {
+#container-list, 
+#container-navbar, 
+#well-filter .row, 
+#well-footer .row {
 	max-width: 1100px;
 }
 
@@ -44,9 +47,23 @@
 	margin: 0px;
 }
 
-
 #container-list .row .well {
-	/* This might be useful in the future */
-	/* min-width: 250px; */
 	padding: 4px;
+}
+
+#container-list .row .well .image {
+	position: relative;
+	display:inline-block;
+}
+
+#container-list .row .well .image .dropdown {
+	margin: 4px;
+	position: absolute;
+	right: 0px;
+}
+#search-modal-1 .form-control {
+	margin-bottom: 10px;
+}
+#search-modal-1 .form-control:last-child {
+	margin-bottom: 0px;
 }
