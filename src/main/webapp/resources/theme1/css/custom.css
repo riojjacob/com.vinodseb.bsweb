@@ -1,9 +1,17 @@
 
 /* set navbar color */
 #navbar-main {
-   background-color: rgba(20,20,20,0.90);
-   background: rgba(20,20,20,0.90);
-   border-color: rgba(20,20,20,0.90);
+   background-color: rgba(20,20,20,0.80);
+   background: rgba(20,20,20,0.80);
+   border-color: rgba(20,20,20,0.80);
+}
+
+#navbar-main a {
+	color: rgb(255, 255, 255);
+}
+
+#navbar-main .dropdown-menu a {
+	color: rgb(0, 0, 0);
 }
 
 /* set carousel height */
@@ -61,9 +69,16 @@
 	position: absolute;
 	right: 0px;
 }
+
 #search-modal-1 .form-control {
 	margin-bottom: 10px;
 }
+
 #search-modal-1 .form-control:last-child {
 	margin-bottom: 0px;
+}
+
+#well-footer .row {
+	padding: 8px;
+	/* font-size: 16px; */
 }

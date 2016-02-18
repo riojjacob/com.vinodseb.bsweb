@@ -15,7 +15,7 @@
 							<span class="glyphicon glyphicon-menu-hamburger"></span>
 						</button>
 						<ul class="dropdown-menu dropdown-menu-right">
-							<li><a href="#">Quick View</a></li>
+							<li><a href="#" data-toggle="modal" data-target="#adModal1">Quick View</a></li>
 							<li><a href="#">Detailed View</a></li>
 						</ul>
 					</div>
@@ -100,7 +100,7 @@
 							<span class="glyphicon glyphicon-menu-hamburger"></span>
 						</button>
 						<ul class="dropdown-menu dropdown-menu-right">
-							<li><a href="#">Quick View</a></li>
+							<li><a href="#" data-toggle="modal" data-target="#adModal1">Quick View</a></li>
 							<li><a href="#">Detailed View</a></li>
 						</ul>
 					</div>
