@@ -13,7 +13,7 @@
 			<div class="well box-shadow--3dp text-center">
 				<div class="image">
 					<div class="dropdown">
-						<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" >
+						<button type="button" class="btn btn-default btn-sm dropdown-toggle box-shadow--3dp" data-toggle="dropdown" aria-haspopup="true" >
 							<span class="glyphicon glyphicon-menu-hamburger"></span>
 						</button>
 						<ul class="dropdown-menu dropdown-menu-right">
