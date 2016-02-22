@@ -2,7 +2,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-<div class="well text-center" id="well-footer">
+<div class="well text-center box-shadow--3dp-inv" id="well-footer">
 	<div class="row">
 		<div class="col-sm-2">
 			<div class="row text-left">
