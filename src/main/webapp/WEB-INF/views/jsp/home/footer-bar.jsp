@@ -9,16 +9,16 @@
 				<a href="#home">About Reweb</a>
 			</div>
 			<div class="row text-left">
-				<a href="#home">About Reweb</a>
+				<a href="#home">List Your Property</a>
 			</div>
 			<div class="row text-left">
-				<a href="#home">About Reweb</a>
+				<a href="#home">Find an Agent</a>
 			</div>
 			<div class="row text-left">
-				<a href="#home">About Reweb</a>
+				<a href="#home">Register With Us</a>
 			</div>
 			<div class="row text-left">
-				<a href="#home">About Reweb</a>
+				<a href="#home">Contact Us</a>
 			</div>
 		</div>
 		<div class="col-sm-2">

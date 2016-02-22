@@ -1,3 +1,7 @@
+h3 {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
 
 /* set navbar color */
 #navbar-main {
@@ -55,8 +59,20 @@
 	margin: 0px;
 }
 
-#container-list .row .well {
+#container-list table td {
 	padding: 4px;
+}
+
+#container-list .row .well {
+	background-color: #FFFFFF;
+	padding: 4px;
+	border-radius: 0;
+	border: 0px;
+}
+
+#container-list .col-sm-3 {
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 #container-list .row .well .image {
@@ -64,6 +80,10 @@
 	display:inline-block;
 }
 
+/* #container-list .row .well .image img {
+	border-radius: 0;
+}
+ */
 #container-list .row .well .image .dropdown {
 	margin: 4px;
 	position: absolute;
@@ -80,5 +100,14 @@
 
 #well-footer .row {
 	padding: 8px;
-	/* font-size: 16px; */
 }
+/* 
+.box-shadow--8dp {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)
+}*/
+.box-shadow--3dp {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12)
+}
+/* .box-shadow--6dp {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .2)
+} */
