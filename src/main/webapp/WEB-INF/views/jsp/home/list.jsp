@@ -4,6 +4,7 @@
 
 <div class="container-fluid" id="container-list">
 	<h3 class="text-left" id="featured-properties">Featured Properties</h3>
+	<p>Best deals we have at present.<br />Please contact one of our agents to get the most recent price and related details of these properties.</p>
 	<c:forEach begin="1" end="2">
 	<div class="row">
 		<div class="col-sm-3">
