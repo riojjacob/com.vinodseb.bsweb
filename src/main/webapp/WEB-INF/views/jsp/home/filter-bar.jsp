@@ -18,9 +18,9 @@
 		</div>
 		
 		<div class="col-sm-1 text-right">
-			<button class="btn btn-default"  data-toggle="modal" data-target="#search-modal-1">
+			<a href="#" class="btn btn-default"  data-toggle="modal" data-target="#search-modal-1">
 				<span class="glyphicon glyphicon-cog"></span>
-			</button>
+			</a>
     	</div>
     	</form>
     	
