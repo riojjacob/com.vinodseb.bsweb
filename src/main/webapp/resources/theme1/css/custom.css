@@ -73,6 +73,7 @@
 #container-list .row .well .image {
 	position: relative;
 	display:inline-block;
+	max-width: 440px;
 }
 
 #container-list .row .well .image .dropdown {
@@ -97,6 +98,7 @@
 	padding: 8px;
 }
 
+/* shadows */
 .box-shadow--3dp {
 	-webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
 	-moz-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
@@ -107,4 +109,26 @@
 	-webkit-box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
 	-moz-box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
     box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+}
+
+/* Pagination custom theme */
+.pagination>li>a,
+.pagination>li>span {
+	border: 1px solid rgb(204, 204, 204);
+	color: rgb(51, 51, 51);
+}
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover
+ {
+	border: 1px solid rgb(204, 204, 204);
+	background: rgb(204, 204, 204);
+	color: rgb(255, 255, 255);
+}
+.pagination>li>a:hover{
+	border: 1px solid rgb(204, 204, 204);
+	color: rgb(51, 51, 51);
 }

@@ -5,7 +5,7 @@
 <div class="well box-shadow--3dp" id="well-filter">
 	<div class="row">
 		<form>
-		<div class="col-sm-11 text-left">
+		<div class="col-sm-11 col-xs-12 text-left">
 			<div class="input-group" >
 				<label class="input-group-addon">Search</label>
 				<input class="form-control" type="text" placeholder="Enter an address, location, city or postal code" />
@@ -17,7 +17,7 @@
 			</div>
 		</div>
 		
-		<div class="col-sm-1 text-right">
+		<div class="col-sm-1 hidden-xs text-right">
 			<a href="#" class="btn btn-default"  data-toggle="modal" data-target="#search-modal-1">
 				<span class="glyphicon glyphicon-cog"></span>
 			</a>
