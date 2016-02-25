@@ -1,0 +1,128 @@
+/* set navbar color */
+/* #navbar-main {
+   background-color: rgba(20,20,20,0.80);
+   background: rgba(20,20,20,0.80);
+   border-color: rgba(20,20,20,0.80);
+} */
+
+/* #navbar-main a {
+	color: rgb(255, 255, 255);
+} */
+
+/* #navbar-main .dropdown-menu a {
+	color: rgb(0, 0, 0);
+}
+ */
+/* set carousel height */
+/* #carousel-inner-slide {
+	max-height:600px;
+}
+ */
+/* remove carousel padding */
+/* #panel-heading-main,
+#panel-footer-main {
+	padding: 0px;
+	border: 0px;
+}
+
+remove main panel borders and margins
+#panel-main {
+	border: 0px;
+	margin: 0px;
+} */
+
+/* #well-filter {
+	margin: 0px;
+	border: 0px;
+	border-radius: 0;
+} */
+
+/* #well-filter .row, 
+#well-footer .row {
+    margin: 0px auto;
+} */
+
+/* set list's max width */ 
+/* #container-navbar, 
+#well-filter .row {
+	max-width: 1100px;
+}
+ */
+/* #container-list table {
+	margin: 0px;
+}
+
+#container-list table td {
+	padding: 4px;
+}
+
+#container-list .row .well {
+	background-color: #FFFFFF;
+	padding: 4px;
+	border-radius: 0;
+	border: 0px;
+}
+
+#container-list .col-sm-3 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#container-list .row .well .image {
+	position: relative;
+	display:inline-block;
+	max-width: 440px;
+}
+
+#container-list .row .well .image .dropdown {
+	margin: 4px;
+	position: absolute;
+	right: 0px;
+}
+
+#container-list .row .well .image .dropdown .btn {
+	border: 0px;
+}
+ */
+/* #search-modal-1 .form-control {
+	margin-bottom: 10px;
+}
+
+#search-modal-1 .form-control:last-child {
+	margin-bottom: 0px;
+} */
+
+/* shadows */
+/* .box-shadow--3dp {
+	-webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+	-moz-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+}
+
+.box-shadow--3dp-inv {
+	-webkit-box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+	-moz-box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+}
+ */
+/* Pagination custom theme */
+/* .pagination>li>a,
+.pagination>li>span {
+	border: 1px solid rgb(204, 204, 204);
+	color: rgb(51, 51, 51);
+}
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover
+ {
+	border: 1px solid rgb(204, 204, 204);
+	background: rgb(204, 204, 204);
+	color: rgb(255, 255, 255);
+}
+.pagination>li>a:hover{
+	border: 1px solid rgb(204, 204, 204);
+	color: rgb(51, 51, 51);
+}*/
