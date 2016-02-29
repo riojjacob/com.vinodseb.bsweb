@@ -1,33 +1,36 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-<spring:url value="/resources/css/custom.css" var="customCss" />
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>reweb - beta</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="${customCss}">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-</head>
-<body>
-	<div class="panel panel-default" id="main-panel">
-		<div class="panel-heading box-shadow-3dp" id="main-panel-heading">
-			<jsp:include page="../nav-bar.jsp"></jsp:include>
+<jsp:include page="../header.jsp"></jsp:include>
+<div class="container">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-2">
+			<ul class="nav nav-sidebar">
+				 <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+				 <li><a href="#">Reports</a></li>
+				 <li><a href="#">Analytics</a></li>
+				 <li><a href="#">Export</a></li>
+			</ul>
+			<div class="well">
+			<form role="form">
+				<div class="form-group">
+					<label>Location </label>
+					<input class="form-control input-sm" type="text" />
+				</div>
+				<div class="form-group">
+					<label>Location </label>
+					<input class="form-control input-sm" type="text" />
+				</div>
+				<div class="form-group">
+					<button class="btn btn-primary form-control input-sm">Submit</button>
+				</div>
+			</form>
+			</div>
 		</div>
-		<div class="panel-body" id="main-panel-body">
-		</div>
-		<div class="panel-footer box-shadow-3dp-inv" id="main-panel-footer">
-			<jsp:include page="../footer-bar.jsp"></jsp:include>
+		<div class="col-xs-12 col-sm-12 col-md-10">
 		</div>
 	</div>
-</body>
-</html>
+</div>
+<jsp:include page="../footer.jsp"></jsp:include>

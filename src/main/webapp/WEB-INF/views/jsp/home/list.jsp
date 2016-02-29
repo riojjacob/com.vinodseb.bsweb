@@ -28,9 +28,9 @@
 				</a>
 			</div>
 			<ul class="list-group">
+				<li class="list-group-item">2BD.2BR.2400SqFt</li>
+				<li class="list-group-item">Abu Shagara, Sharjah</li>
 				<li class="list-group-item list-group-item-success">AED 23212.23</li>
-				<li class="list-group-item">House for sale</li>
-				<li class="list-group-item">House for sale</li>
 			</ul>
 		</div>
 		
