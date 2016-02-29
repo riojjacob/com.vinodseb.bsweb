@@ -1,13 +1,11 @@
 html,body{
 	font-family: "lato-regular", Helvetica, Arial, sans-serif";
 	letter-spacing: 0.5px;
-    height: 100%
+    height: 100%;
 }
 
-body>.panel {
+#main-panel {
 	margin-bottom: 0px;
-	border: 0px;
-	height: 100%;
 }
 
 #main-panel-heading {
@@ -94,8 +92,7 @@ body>.panel {
 .pagination>.active>a:hover, 
 .pagination>.active>span, 
 .pagination>.active>span:focus, 
-.pagination>.active>span:hover
-{
+.pagination>.active>span:hover {
 	border: 1px solid rgb(204, 204, 204);
 	background: rgb(204, 204, 204);
 	color: rgb(255, 255, 255);
@@ -108,4 +105,25 @@ body>.panel {
 #carousel-inner-slide {
 	max-height: 500px;	
 
+}
+
+.page-content .panel, .list-group-item {
+	border-radius: 0px !important;
+}
+
+.list-group-item {
+	border-right: 0px;
+	border-left: 0px;
+}
+
+.page-content .list-group-item:first-child {
+	border-top: 0px;
+}
+
+.page-content .list-group-item:last-child {
+	border-bottom: 0px;
+}
+
+.page-content .thumbnail, .page-content .list-group {
+	margin: 0px;
 }
