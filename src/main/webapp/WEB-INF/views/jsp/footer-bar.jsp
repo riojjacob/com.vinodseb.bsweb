@@ -6,25 +6,26 @@
 	<div class="row">
 		<div class="col-md-2">
 			<div class="list-group">
-				<a href="#home" class="list-group-item">About Reweb</a>
-				<a href="#home" class="list-group-item">List Your Property</a>
-				<a href="#home" class="list-group-item">Find an Agent</a>
-				<a href="#home" class="list-group-item">Register With Us</a>
-				<a href="#home" class="list-group-item">Contact Us</a>
+				<a href="#home" class="btn btn-link">Link</a><br/>
+				<a href="#home" class="btn btn-link">About Reweb</a><br/>
+				<a href="#home" class="btn btn-link">List Your Property</a><br/>
+				<a href="#home" class="btn btn-link">Find an Agent</a><br/>
+				<a href="#home" class="btn btn-link">Register With Us</a><br/>
+				<a href="#home" class="btn btn-link">Contact Us</a><br/>
 			</div>
 		</div>
 		<div class="col-md-2">
 			<div class="list-group">
-				<a href="#home" class="list-group-item">Download Forms</a>
-				<a href="#home" class="list-group-item">Talk to an Agent</a>
+				<a href="#home" class="btn btn-link">Download Forms</a><br/>
+				<a href="#home" class="btn btn-link">Talk to an Agent</a><br/>
 			</div>
 		</div>
 		<div class="col-md-2">
 			<div class="list-group">
-				<a href="#home" class="list-group-item">Dubai</a>
-				<a href="#home" class="list-group-item">Abu Dhabi</a>
-				<a href="#home" class="list-group-item">Sharjah</a>
-				<a href="#home" class="list-group-item">Al Ain</a>
+				<a href="#home" class="btn btn-link">Dubai</a><br/>
+				<a href="#home" class="btn btn-link">Abu Dhabi</a><br/>
+				<a href="#home" class="btn btn-link">Sharjah</a><br/>
+				<a href="#home" class="btn btn-link">Al Ain</a><br/>
 			</div>
 		</div>
 		<div class="col-md-6">

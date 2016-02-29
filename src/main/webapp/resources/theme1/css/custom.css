@@ -5,6 +5,11 @@ body>.panel {
 
 #main-panel-heading {
 	padding: 0px;
+	border: 0px;
+}
+
+#main-panel-footer {
+	border: 0px;	
 }
 
 #main-panel-heading,
@@ -36,4 +41,41 @@ body>.panel {
 
 #footer-container a {
 	
+}
+
+#list-container .row .image {
+	position: relative;
+	display:inline-block;
+}
+
+#list-container .row .image .dropdown {
+	margin: 4px;
+	position: absolute;
+	right: 0px;
+}
+
+#list-container .row .image .dropdown .btn {
+	border: 0px;
+}
+
+/* Pagination custom theme */
+.pagination>li>a,
+.pagination>li>span {
+	border: 1px solid rgb(204, 204, 204);
+	color: rgb(51, 51, 51);
+}
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover
+ {
+	border: 1px solid rgb(204, 204, 204);
+	background: rgb(204, 204, 204);
+	color: rgb(255, 255, 255);
+}
+.pagination>li>a:hover{
+	border: 1px solid rgb(204, 204, 204);
+	color: rgb(51, 51, 51);
 }

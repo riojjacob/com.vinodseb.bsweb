@@ -20,16 +20,16 @@
 </head>
 <body>
 	<div class="panel panel-default" id="main-panel">
-		<div class="panel-heading" id="main-panel-heading">
-			<jsp:include page="nav-bar.jsp"></jsp:include>
-			<jsp:include page="carousel.jsp"></jsp:include>
-			<jsp:include page="filter-bar.jsp"></jsp:include>
+		<div class="panel-heading box-shadow-3dp" id="main-panel-heading">
+			<jsp:include page="../nav-bar.jsp"></jsp:include>
+			<jsp:include page="../carousel.jsp"></jsp:include>
+			<jsp:include page="../filter-bar.jsp"></jsp:include>
 		</div>
 		<div class="panel-body" id="main-panel-body">
 			<jsp:include page="list-box.jsp"></jsp:include>
 		</div>
-		<div class="panel-footer" id="main-panel-footer">
-			<jsp:include page="footer-bar.jsp"></jsp:include>
+		<div class="panel-footer box-shadow-3dp-inv" id="main-panel-footer">
+			<jsp:include page="../footer-bar.jsp"></jsp:include>
 		</div>
 	</div>
 </body>
