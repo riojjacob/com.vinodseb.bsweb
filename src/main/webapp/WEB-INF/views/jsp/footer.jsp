@@ -4,7 +4,7 @@
 
 
 		</div>
-		<div class="panel-footer box-shadow-3dp-inv" id="main-panel-footer">
+		<div class="panel-footer" id="main-panel-footer">
 			<jsp:include page="footer-bar.jsp"></jsp:include>
 		</div>
 	</div>

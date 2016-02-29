@@ -5,7 +5,7 @@
 <div class="container" id="footer-container">
 	<div class="row">
 		<div class="col-md-2">
-			<div class="list-group text-center">
+			<div class="list-group">
 				<a href="#home" class="btn btn-link">About Reweb</a><br/>
 				<a href="#home" class="btn btn-link">List Your Property</a><br/>
 				<a href="#home" class="btn btn-link">Find an Agent</a><br/>
@@ -14,13 +14,13 @@
 			</div>
 		</div>
 		<div class="col-md-2">
-			<div class="list-group text-center">
+			<div class="list-group">
 				<a href="#home" class="btn btn-link">Download Forms</a><br/>
 				<a href="#home" class="btn btn-link">Talk to an Agent</a><br/>
 			</div>
 		</div>
 		<div class="col-md-2">
-			<div class="list-group text-center">
+			<div class="list-group">
 				<a href="#home" class="btn btn-link">Dubai</a><br/>
 				<a href="#home" class="btn btn-link">Abu Dhabi</a><br/>
 				<a href="#home" class="btn btn-link">Sharjah</a><br/>
@@ -28,7 +28,7 @@
 			</div>
 		</div>
 		<div class="col-md-6">
-			<span class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
 		</div>
 	</div>
 	<div class="row">
