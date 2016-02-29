@@ -23,39 +23,44 @@ body>.panel {
 }
 
 .box-shadow-3dp {
-	-webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+/* 	-webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
 	-moz-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+ */    
+ 
+ box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
 }
 
 .box-shadow-3dp-inv {
-	-webkit-box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
-	-moz-box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
-    box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+	-webkit-box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 -3px 3px -2px rgba(0, 0, 0, .2), 0 -1px 8px 0 rgba(0, 0, 0, .12);
+	-moz-box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 -3px 3px -2px rgba(0, 0, 0, .2), 0 -1px 8px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 -3px 3px -2px rgba(0, 0, 0, .2), 0 -1px 8px 0 rgba(0, 0, 0, .12);
 }
 
-#list-container .thumbnail {
-	border: 0px;
-	border-radius: 0;
-}
-
-#footer-container a {
-	
-}
-
-#list-container .row .image {
+#list-container .image {
 	position: relative;
 	display:inline-block;
+	width: 100%;
 }
 
-#list-container .row .image .dropdown {
+#list-container .image img {
+	width: 100%;
+	padding-left: auto;
+	padding-right: auto;
+}
+
+#list-container .image .dropdown {
 	margin: 4px;
 	position: absolute;
 	right: 0px;
 }
 
-#list-container .row .image .dropdown .btn {
+#list-container .image .btn,
+#list-container .list-group-item {
 	border: 0px;
+}
+
+#list-container .list-group-item {
+	border-radius: 0px;
 }
 
 /* Pagination custom theme */
@@ -70,7 +75,7 @@ body>.panel {
 .pagination>.active>span, 
 .pagination>.active>span:focus, 
 .pagination>.active>span:hover
- {
+{
 	border: 1px solid rgb(204, 204, 204);
 	background: rgb(204, 204, 204);
 	color: rgb(255, 255, 255);
@@ -79,3 +84,9 @@ body>.panel {
 	border: 1px solid rgb(204, 204, 204);
 	color: rgb(51, 51, 51);
 }
+
+#carousel-inner-slide {
+	max-height:400px;
+}
+
+

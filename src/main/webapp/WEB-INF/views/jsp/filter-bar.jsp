@@ -8,7 +8,7 @@
 			<div class="col-sm-11 col-xs-12">
 				<div class="input-group">
 					<label class="input-group-addon">Search</label> 
-					<input class="form-control" type="text" placeholder="Enter an address, location, city or postal code" />
+					<input class="form-control" type="text" placeholder="What are you looking for?" />
 					<span class="input-group-btn">
 						<button class="btn btn-default">
 							<span class="glyphicon glyphicon-search"></span>

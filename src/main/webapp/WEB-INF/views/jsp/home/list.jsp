@@ -6,13 +6,13 @@
 <div class="row">
 
 	<c:forEach begin="1" end="4" varStatus="c_counter">
-	<div class="col-md-3">
+	<div class="col-xs-12 col-sm-6 col-md-3">
 
 		<spring:url value="/resources/images/80${c_counter.count }.jpg" var="ad_img" />
 		<spring:url value="/property" var="ad_page" />
 		<c:set var="model_id" value="ad_modal_${r_counter.count}_${c_counter.count}" />
 		
-		<div class="thumbnail box-shadow-3dp">
+		<div class="box-shadow-3dp">
 			<div class="image">
 				<div class="dropdown">
 					<button type="button" class="btn btn-default btn-sm dropdown-toggle box-shadow--3dp" data-toggle="dropdown" aria-haspopup="true" >
@@ -20,36 +20,18 @@
 					</button>
 					<ul class="dropdown-menu dropdown-menu-right">
 						<li><a href="#" data-toggle="modal" data-target="#${model_id}">Quick View</a></li>
-						<li><a href="${ad_page}">Detailed View</a></li>
+						<li><a href="${ad_page}">Property Details</a></li>
 					</ul>
 				</div>
 				<a href="#" data-toggle="modal" data-target="#${model_id}">
 					<img src="${ad_img}" class="img-responsive" alt="Cinque Terre">
 				</a>
 			</div>
-			<div>
-				<table class="table">
-					<thead>
-						<tr>
-							<th colspan="2">House For Sale</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Price</td>
-							<td>40,0000</td>
-						</tr>
-						<tr>
-							<td>Area</td>
-							<td>2000 sq ft</td>
-						</tr>
-						<tr>
-							<td>Location</td>
-							<td>Trivandrum</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+			<ul class="list-group">
+				<li class="list-group-item list-group-item-success">AED 23212.23</li>
+				<li class="list-group-item">House for sale</li>
+				<li class="list-group-item">House for sale</li>
+			</ul>
 		</div>
 		
 		<!-- Modal -->
