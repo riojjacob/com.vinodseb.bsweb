@@ -2,7 +2,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-<div id="sidebar-container">
+<div id="sidebar-container" id="property-section-sidenav">
 
 	<%-- Navigation Bar --%>
 	<div class="list-group box-shadow-3dp">

@@ -2,7 +2,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-<div id="similar-properties">
+<div id="property-section-similar">
 
 	<%-- Title --%>
 	<div class="list-group box-shadow-3dp">

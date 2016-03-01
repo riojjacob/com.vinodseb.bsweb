@@ -2,7 +2,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-<div class="panel panel-default box-shadow-3dp">
+<div class="panel panel-default box-shadow-3dp" id="property-section-contact">
  	<div class="panel-heading">Contact &amp; Enquires</div>
 	<div class="panel-body">
 		<form class="form-horizontal" role="form">
