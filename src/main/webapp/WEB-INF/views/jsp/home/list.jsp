@@ -6,7 +6,7 @@
 <div class="row">
 
 	<c:forEach begin="1" end="4" varStatus="c_counter">
-	<div class="col-xs-12 col-sm-6 col-md-3">
+	<div class="col-xs-12 col-sm-6 col-md-3 list-content">
 
 		<spring:url value="/resources/images/80${c_counter.count }.jpg" var="ad_img" />
 		<spring:url value="/property" var="ad_page" />
@@ -30,7 +30,7 @@
 			<ul class="list-group">
 				<li class="list-group-item">2BD.2BR.2400SqFt</li>
 				<li class="list-group-item">Abu Shagara, Sharjah</li>
-				<li class="list-group-item list-group-item-success">AED 23212.23</li>
+				<li class="list-group-item list-group-item-default">AED 23212.23</li>
 			</ul>
 		</div>
 		

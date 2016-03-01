@@ -48,37 +48,26 @@ html,body{
 	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
 }
 
-.box-shadow-3dp-inv {
-	-webkit-box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 -3px 3px -2px rgba(0, 0, 0, .2), 0 -1px 8px 0 rgba(0, 0, 0, .12);
-	-moz-box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 -3px 3px -2px rgba(0, 0, 0, .2), 0 -1px 8px 0 rgba(0, 0, 0, .12);
-    box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, .14), 0 -3px 3px -2px rgba(0, 0, 0, .2), 0 -1px 8px 0 rgba(0, 0, 0, .12);
-}
-
-#list-container .image {
+.image {
 	position: relative;
 	display:inline-block;
 	width: 100%;
 }
 
-#list-container .image img {
+.image img {
 	width: 100%;
 	padding-left: auto;
 	padding-right: auto;
 }
 
-#list-container .image .dropdown {
+.image .dropdown {
 	margin: 4px;
 	position: absolute;
 	right: 0px;
 }
 
-#list-container .image .btn,
-#list-container .list-group-item {
+.image .btn {
 	border: 0px;
-}
-
-#list-container .list-group-item {
-	border-radius: 0px;
 }
 
 /* Pagination custom theme */
@@ -106,7 +95,9 @@ html,body{
 	max-height: 500px;	
 
 }
-
+.page-content .panel{
+	border: 0px;
+}
 .page-content .panel, .list-group-item {
 	border-radius: 0px !important;
 }
@@ -116,10 +107,19 @@ html,body{
 	border-left: 0px;
 }
 
+.sidenav-content .list-group-item,
+.list-content .list-group-item {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.sidenav-content .list-group-item:first-child,
+.list-content .list-group-item:first-child,
 .page-content .list-group-item:first-child {
 	border-top: 0px;
 }
-
+.sidenav-content .list-group-item:last-child,
+.list-content .list-group-item:last-child, 
 .page-content .list-group-item:last-child {
 	border-bottom: 0px;
 }
