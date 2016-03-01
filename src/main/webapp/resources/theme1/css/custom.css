@@ -93,11 +93,12 @@ html,body{
 
 #carousel-inner-slide {
 	max-height: 500px;	
-
 }
+
 .page-content .panel{
 	border: 0px;
 }
+
 .page-content .panel, .list-group-item {
 	border-radius: 0px !important;
 }
@@ -108,22 +109,28 @@ html,body{
 }
 
 .sidenav-content .list-group-item,
-.list-content .list-group-item {
+.list-item .list-group-item {
 	margin-left: 8px;
 	margin-right: 8px;
 }
 
 .sidenav-content .list-group-item:first-child,
-.list-content .list-group-item:first-child,
+.list-item .list-group-item:first-child,
 .page-content .list-group-item:first-child {
 	border-top: 0px;
 }
+
 .sidenav-content .list-group-item:last-child,
-.list-content .list-group-item:last-child, 
+.list-item .list-group-item:last-child, 
 .page-content .list-group-item:last-child {
 	border-bottom: 0px;
 }
 
 .page-content .thumbnail, .page-content .list-group {
 	margin: 0px;
+}
+
+.sidenav-content .active {
+	margin-left: 0px;
+	margin-right: 0px;
 }

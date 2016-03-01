@@ -12,7 +12,7 @@
 		<spring:url value="/property" var="ad_page" />
 		<c:set var="model_id" value="ad_modal_${r_counter.count}_${c_counter.count}" />
 		
-		<div class="box-shadow-3dp">
+		<div class="list-item box-shadow-3dp">
 			<div class="image">
 				<div class="dropdown">
 					<button type="button" class="btn btn-default btn-sm dropdown-toggle box-shadow--3dp" data-toggle="dropdown" aria-haspopup="true" >

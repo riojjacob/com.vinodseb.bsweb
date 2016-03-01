@@ -10,8 +10,9 @@
 		<div class="hidden-xs hidden-sm col-md-3 sidenav-content">
 			<div class="list-group box-shadow-3dp">
 				<a href="#" class="list-group-item active">Property</a> 
-				<a href="#" class="list-group-item">Details</a> 
 				<a href="#" class="list-group-item">Images</a> 
+				<a href="#" class="list-group-item">Details</a> 
+				<a href="#" class="list-group-item">Location</a> 
 				<a href="#" class="list-group-item">Contact</a> 
 				<a href="#" class="list-group-item">Agent</a>
 			</div>
@@ -23,7 +24,7 @@
 				<spring:url value="/property" var="ad_page" />
 				<c:set var="model_id" value="ad_modal_${c_counter.count}" />
 				
-				<div class="box-shadow-3dp">
+				<div class="list-item box-shadow-3dp">
 					<div class="image">
 						<div class="dropdown">
 							<button type="button" class="btn btn-default btn-sm dropdown-toggle box-shadow--3dp" data-toggle="dropdown" aria-haspopup="true" >
@@ -44,6 +45,49 @@
 						<li class="list-group-item list-group-item-default">AED 23212.23</li>
 					</ul>
 				</div>
+				
+				<!-- Modal -->
+				<div id="${model_id}" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">House For Sale</h4>
+							</div>
+							<div class="modal-body">
+								<img src="${ad_img}" class="img-responsive img-rounded center-block" alt="Cinque Terre">
+								<table class="table">
+									<thead>
+										<tr>
+											<th colspan="2">Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Price</td>
+											<td>40,0000</td>
+										</tr>
+										<tr>
+											<td>Area</td>
+											<td>2000 sq ft</td>
+										</tr>
+										<tr>
+											<td>Location</td>
+											<td>Trivandrum</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" onclick="window.location.href='property'">View</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Modal -->
+				
 			</c:forEach>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-9 page-content">
@@ -131,7 +175,7 @@
 						</div>
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10 text-right">
-								<button type="submit" class="btn btn-default">Submit</button>
+								<button type="submit" class="btn btn-primary">Submit</button>
 							</div>
 						</div>
 					</form>
