@@ -146,8 +146,12 @@ html,body{
 
 
 /*******************SECTION BASED STYLES**************************/
-
+/*******************Property Details**************************/
 #property-section-details .row div{
+	padding: 0px;
+}
+/*******************Property Agent**************************/
+#property-section-agent .list-group-item .row div{
 	padding: 0px;
 }
 
