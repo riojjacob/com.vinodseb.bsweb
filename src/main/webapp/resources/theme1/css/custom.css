@@ -127,7 +127,7 @@ html,body{
 	border-bottom: 0px;
 }
 
-.page-content .thumbnail, .page-content .list-group {
+.page-content .list-group {
 	margin: 0px;
 }
 
@@ -145,7 +145,7 @@ html,body{
 }
 
 
-/*******************SECTION BASED STYLES**************************/
+/*******************PAGE SECTION**************************/
 /*******************Property Details**************************/
 #property-section-details .row *{
 	padding: 0px;
@@ -154,4 +154,19 @@ html,body{
 #property-section-agent .list-group-item .row *{
 	padding: 0px;
 }
-
+/*******************Property Images**************************/
+#property-section-images .thumbnail{
+	margin: 0px;
+}
+#property-section-images .thumbnail img{
+	width: 100%;
+}
+#property-section-images .panel-body>img{
+	margin: 0 auto;	
+}
+#property-section-images .panel-body>div{
+	padding-top: 20px;
+}
+#property-section-images .row a{
+	border:0px;
+}

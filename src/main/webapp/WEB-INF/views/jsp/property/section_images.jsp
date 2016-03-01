@@ -3,21 +3,22 @@
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <%-- Property Image --%>
-<spring:url value="/resources/images/802.jpg" var="propertyImage" />
+<spring:url value="/resources/images/802.jpg" var="propertyImage1" />
+<spring:url value="/resources/images/803.jpg" var="propertyImage2" />
 
-<div class="panel panel-default box-shadow-3dp">
+<div class="panel panel-default box-shadow-3dp" id="property-section-images">
  	<div class="panel-heading">Image &amp; Title</div>
 	<div class="panel-body">
 		
 		<%-- Main Image --%>
-		<img src="${propertyImage}" class="img-rounded img-responsive" style="margin: 0 auto;"/>
+		<img src="${propertyImage1}" class="img-rounded img-responsive"/>
 		
 		<%-- Image Thumbs, Thumbs are hidden on small screens --%>
-		<div class="row hidden-xs hidden-sm " style="padding-top: 20px;">
+		<div class="row hidden-xs hidden-sm ">
 			<c:forEach begin="1" end="6">
 			<div class="col-sm-2">
-				<a href="#" class="thumbnail" style="border:0px;"> 
-   					<img src="${propertyImage}" class="img-rounded img-responsive" alt="Pulpit Rock" style="width:100%" />
+				<a href="#" class="thumbnail"> 
+   					<img src="${propertyImage2}" class="img-rounded img-responsive" alt="Alternate Image" />
  				</a>
 			</div>
 			</c:forEach>
