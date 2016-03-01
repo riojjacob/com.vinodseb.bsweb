@@ -143,3 +143,11 @@ html,body{
 @media (max-width: 767px) {
     #footer-container .list-group { text-align:center }
 }
+
+
+/*******************SECTION BASED STYLES**************************/
+
+#property-section-details .row div{
+	padding: 0px;
+}
+
