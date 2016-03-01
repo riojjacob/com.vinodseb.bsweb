@@ -122,7 +122,8 @@ html,body{
 
 .sidenav-content .list-group-item:last-child,
 .list-item .list-group-item:last-child, 
-.page-content .list-group-item:last-child {
+.page-content .list-group-item:last-child,
+.quick-view-window  .list-group-item:last-child {
 	border-bottom: 0px;
 }
 
@@ -133,4 +134,8 @@ html,body{
 .sidenav-content .active {
 	margin-left: 0px;
 	margin-right: 0px;
+}
+
+.quick-view-window .list-group:last-child {
+	margin-bottom: 0px;
 }

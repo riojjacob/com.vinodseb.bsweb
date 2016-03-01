@@ -36,7 +36,7 @@
 		
 		<!-- Modal -->
 		<div id="${model_id}" class="modal fade" role="dialog">
-			<div class="modal-dialog">
+			<div class="modal-dialog quick-view-window">
 				<!-- Modal content-->
 				<div class="modal-content">
 					<div class="modal-header">
@@ -45,30 +45,18 @@
 					</div>
 					<div class="modal-body">
 						<img src="${ad_img}" class="img-responsive img-rounded center-block" alt="Cinque Terre">
-						<table class="table">
-							<thead>
-								<tr>
-									<th colspan="2">Details</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Price</td>
-									<td>40,0000</td>
-								</tr>
-								<tr>
-									<td>Area</td>
-									<td>2000 sq ft</td>
-								</tr>
-								<tr>
-									<td>Location</td>
-									<td>Trivandrum</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="list-group">
+							<div class="list-group-item">Location : Near St.Thomas School, Mukkola</div>
+							<div class="list-group-item">Plot Area : 8.5 Cent</div>
+							<div class="list-group-item">Built Area : 2200 Sq.Feet</div>
+							<div class="list-group-item">Bedroom(s) : 3</div>
+							<div class="list-group-item">Approach Road : </div>
+							<div class="list-group-item">Nearby Facilities : </div>
+							<div class="list-group-item">Posted By : Owner</div>
+						</div>					
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-primary" onclick="window.location.href='property'">View</button>
+						<button type="button" class="btn btn-primary" onclick="window.location.href='property'">View Details</button>
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					</div>
 				</div>
