@@ -13,9 +13,9 @@
 		<div class="col-xs-12 col-sm-12 col-md-9 page-content">
 			<jsp:include page="images.jsp"></jsp:include>
 			<jsp:include page="details.jsp"></jsp:include>
-			<jsp:include page="location.jsp"></jsp:include>
 			<jsp:include page="contact.jsp"></jsp:include>
 			<jsp:include page="agent.jsp"></jsp:include>
+			<jsp:include page="location.jsp"></jsp:include>
 		</div>
 	</div>
 </div>
