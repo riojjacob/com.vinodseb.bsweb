@@ -154,6 +154,9 @@ html,body{
 #property-section-agent .list-group-item .row *{
 	padding: 0px;
 }
+#property-section-agent img {
+	margin: 0 auto;	
+}
 /*******************Property Images**************************/
 #property-section-images .thumbnail{
 	margin: 0px;

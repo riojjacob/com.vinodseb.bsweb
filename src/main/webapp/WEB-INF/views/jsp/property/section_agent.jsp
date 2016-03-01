@@ -12,7 +12,7 @@
  		
  			<%-- Agent Image --%>
  			<div class="col-sm-4">
- 				<img src="${agentImage}" class="img-rounded img-responsive" style="margin: 0 auto;"/>
+ 				<img src="${agentImage}" class="img-rounded img-responsive "/>
  			</div>
 
 			<%-- Agent Image --%> 			
