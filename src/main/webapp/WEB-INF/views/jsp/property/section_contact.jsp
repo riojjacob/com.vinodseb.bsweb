@@ -19,7 +19,7 @@
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="pwd">Message</label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="pwd" placeholder="Enter Message">
+					<textarea class="form-control span6" rows="3" placeholder="Enter your message" required></textarea>
 				</div>
 			</div>
 			
