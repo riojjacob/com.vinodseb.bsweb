@@ -2,42 +2,49 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-<spring:url value="/resources/images/802.jpg" var="ad_img" />
-
 <div id="similar-properties">
+
+	<%-- Title --%>
 	<div class="list-group box-shadow-3dp">
 		<a href="#" class="list-group-item active">Similar Properties</a> 
 	</div>
 	
-	<c:forEach begin="1" end="3" varStatus="c_counter">
-		<spring:url value="/resources/images/80${c_counter.count }.jpg" var="ad_img" />
-		<spring:url value="/property" var="ad_page" />
-		<c:set var="model_id" value="ad_modal_${c_counter.count}" />
+	<%-- Similar Property Loop --%>
+	<c:forEach begin="1" end="4" varStatus="cCounter">
+	
+		<spring:url value="/resources/images/80${cCounter.count }.jpg" var="mainImage" />
+		<spring:url value="/property" var="propertyPage" />
+		<c:set value="modal-${cCounter.count}" var="modelId" />
 		
 		<div class="list-item box-shadow-3dp">
+		
+			<%-- Main Image --%>
 			<div class="image">
 				<div class="dropdown">
 					<button type="button" class="btn btn-default btn-sm dropdown-toggle box-shadow--3dp" data-toggle="dropdown" aria-haspopup="true" >
 						<span class="glyphicon glyphicon-menu-hamburger"></span>
 					</button>
 					<ul class="dropdown-menu dropdown-menu-right">
-						<li><a href="#" data-toggle="modal" data-target="#${model_id}">Quick View</a></li>
-						<li><a href="${ad_page}">Property Details</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#${modelId}">Quick View</a></li>
+						<li><a href="${propertyPage}">Property Details</a></li>
 					</ul>
 				</div>
-				<a href="#" data-toggle="modal" data-target="#${model_id}">
-					<img src="${ad_img}" class="img-responsive" alt="Cinque Terre">
+				<a href="#" data-toggle="modal" data-target="#${modelId}">
+					<img src="${mainImage}" class="img-responsive" alt="Cinque Terre">
 				</a>
 			</div>
+			
+			<%-- Basic Details --%>
 			<ul class="list-group">
 				<li class="list-group-item">2BD.2BR.2400SqFt</li>
 				<li class="list-group-item">Abu Shagara, Sharjah</li>
 				<li class="list-group-item list-group-item-default">AED 23212.23</li>
 			</ul>
+			
 		</div>
 		
-		<!-- Modal -->
-		<div id="${model_id}" class="modal fade" role="dialog">
+		<!-- Quick View Window -->
+		<div id="${modelId}" class="modal fade" role="dialog">
 			<div class="modal-dialog quick-view-window">
 				<!-- Modal content-->
 				<div class="modal-content">
@@ -46,7 +53,7 @@
 						<h4 class="modal-title">House For Sale</h4>
 					</div>
 					<div class="modal-body">
-						<img src="${ad_img}" class="img-responsive img-rounded center-block" alt="Cinque Terre">
+						<img src="${mainImage}" class="img-responsive img-rounded center-block" alt="Main Image">
 						<div class="list-group">
 							<div class="list-group-item">Location : Near St.Thomas School, Mukkola</div>
 							<div class="list-group-item">Plot Area : 8.5 Cent</div>
@@ -58,7 +65,7 @@
 						</div>					
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-primary" onclick="window.location.href='property'">View Details</button>
+						<button type="button" class="btn btn-primary" onclick="window.location.href='${propertyPage}'">Property Details</button>
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					</div>
 				</div>
@@ -68,4 +75,3 @@
 		
 	</c:forEach>
 </div>
-
