@@ -3,6 +3,8 @@
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <div id="sidebar-container">
+
+	<%-- Navigation Bar --%>
 	<div class="list-group box-shadow-3dp">
 		<a href="#" class="list-group-item active">Property</a> 
 		<a href="#" class="list-group-item">Images</a> 
@@ -11,5 +13,8 @@
 		<a href="#" class="list-group-item">Contact</a> 
 		<a href="#" class="list-group-item">Agent</a>
 	</div>
+	
+	<%-- Similar Properties Bar --%>
 	<jsp:include page="section_similar_properties.jsp"></jsp:include>
+	
 </div>
