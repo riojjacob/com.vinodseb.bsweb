@@ -3,7 +3,7 @@
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <%-- Agent Image --%>
-<spring:url value="/resources/images/802.jpg" var="agentImage" />
+<spring:url value="/resources/images/unknown.png" var="agentImage" />
 
 <div class="panel panel-default box-shadow-3dp" id="property-section-agent">
  	<div class="panel-heading">Agent</div>
