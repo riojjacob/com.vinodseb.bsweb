@@ -5,6 +5,8 @@
 <div class="panel panel-default box-shadow-3dp">
 	<div class="panel-heading">Property Details</div>
 	<div class="panel-body">
+	
+		<%-- Property Details : TODO change this to a table? --%>
 		<div class="list-group">
 			<div class="list-group-item">Location : Near St.Thomas School, Mukkola</div>
 			<div class="list-group-item">Plot Area : 8.5 Cent</div>
@@ -13,6 +15,7 @@
 			<div class="list-group-item">Approach Road : </div>
 			<div class="list-group-item">Nearby Facilities : </div>
 			<div class="list-group-item">Posted By : Owner</div>
-		</div>					
+		</div>
+		
 	</div>
 </div>
