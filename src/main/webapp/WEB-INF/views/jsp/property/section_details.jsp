@@ -10,44 +10,44 @@
 		<div class="list-group">
 			<div class="list-group-item">
 				<div class="row">
-					<div class="col-xs-3">Location</div>
-					<div class="col-xs-9">Near St.Thomas School, Mukkola</div>
+					<label class="col-xs-4 col-sm-3 col-md-2">Location</label>
+					<div class="col-xs-8 col-sm-9 col-md-10">Near St.Thomas School, Mukkola</div>
 				</div>
 			</div>
 			<div class="list-group-item">
 				<div class="row">
-					<div class="col-xs-3">Plot Area</div>
-					<div class="col-xs-9">8.5 Cent</div>
+					<label class="col-xs-4 col-sm-3 col-md-2">Plot Area</label>
+					<div class="col-xs-4 col-sm-9 col-md-10">8.5 Cent</div>
 				</div>
 			</div>
 			<div class="list-group-item">
 				<div class="row">
-					<div class="col-xs-3">Built Area</div>
-					<div class="col-xs-9">2200 Sq.Feet</div>
+					<label class="col-xs-4 col-sm-3 col-md-2">Built Area</label>
+					<div class="col-xs-8 col-sm-9 col-md-10">2200 Sq.Feet</div>
 				</div>
 			</div>
 			<div class="list-group-item">
 				<div class="row">
-					<div class="col-xs-3">Bedroom(s)</div>
-					<div class="col-xs-9">3</div>
+					<label class="col-xs-4 col-sm-3 col-md-2">Bed Rooms</label>
+					<div class="col-xs-8 col-sm-9 col-md-10">3</div>
 				</div>
 			</div>
 			<div class="list-group-item">
 				<div class="row">
-					<div class="col-xs-3">Approach Road</div>
-					<div class="col-xs-9"></div>
+					<label class="col-xs-4 col-sm-3 col-md-2">Approach Road</label>
+					<div class="col-xs-8 col-sm-9 col-md-10"></div>
 				</div>
 			</div>
 			<div class="list-group-item">
 				<div class="row">
-					<div class="col-xs-3">Nearby Facilities</div>
-					<div class="col-xs-9"></div>
+					<label class="col-xs-4 col-sm-3 col-md-2">Facilities</label>
+					<div class="col-xs-8 col-sm-9 col-md-10"></div>
 				</div>
 			</div>
 			<div class="list-group-item">
 				<div class="row">
-					<div class="col-xs-3">Posted By</div>
-					<div class="col-xs-9">Owner</div>
+					<label class="col-xs-4 col-sm-3 col-md-2">Posted By</label>
+					<div class="col-xs-8 col-sm-9 col-md-10">Owner</div>
 				</div>
 			</div>
 		</div>

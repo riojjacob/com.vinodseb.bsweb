@@ -147,11 +147,11 @@ html,body{
 
 /*******************SECTION BASED STYLES**************************/
 /*******************Property Details**************************/
-#property-section-details .row div{
+#property-section-details .row *{
 	padding: 0px;
 }
 /*******************Property Agent**************************/
-#property-section-agent .list-group-item .row div{
+#property-section-agent .list-group-item .row *{
 	padding: 0px;
 }
 

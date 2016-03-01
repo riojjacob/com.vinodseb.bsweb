@@ -20,20 +20,20 @@
  				<div class="list-group">
 					<div class="list-group-item">
 						<div class="row">
-							<div class="col-xs-3">Name</div>
-							<div class="col-xs-9"></div>
+							<label class="col-xs-4 col-sm-3 col-md-2">Name</label>
+							<div class="col-xs-8 col-sm-9 col-md-10">Vinod Sabastian</div>
 						</div>
 					</div>
 					<div class="list-group-item"> 
 						<div class="row">
-							<div class="col-xs-3">Email</div>
-							<div class="col-xs-9"></div>
+							<label class="col-xs-4 col-sm-3 col-md-2">Email</label>
+							<div class="col-xs-8 col-sm-9 col-md-10">vinod.sabastian@gmail.com</div>
 						</div>
 					</div>
 					<div class="list-group-item"> 
 						<div class="row">
-							<div class="col-xs-3">Phone</div>
-							<div class="col-xs-9"></div>
+							<label class="col-xs-4 col-sm-3 col-md-2">Phone</label>
+							<div class="col-xs-8 col-sm-9 col-md-10">+971 56 180 4967</div>
 						</div>
 					</div>
 				</div>
