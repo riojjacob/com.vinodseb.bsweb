@@ -139,3 +139,7 @@ html,body{
 .quick-view-window .list-group:last-child {
 	margin-bottom: 0px;
 }
+
+@media (max-width: 767px) {
+    #footer-container .list-group { text-align:center }
+}
