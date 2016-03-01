@@ -8,10 +8,10 @@
 	<div class="list-group box-shadow-3dp">
 		<a href="#" class="list-group-item active">Property</a> 
 		<a href="#" class="list-group-item">Images</a> 
-		<a href="#" class="list-group-item">Details</a> 
-		<a href="#" class="list-group-item">Location</a> 
-		<a href="#" class="list-group-item">Contact</a> 
-		<a href="#" class="list-group-item">Agent</a>
+		<a href="#" class="list-group-item">Property Details</a>
+		<a href="#" class="list-group-item">Realestate Agent</a>
+		<a href="#" class="list-group-item">Contact Us</a> 
+		<a href="#" class="list-group-item">Property Location</a> 
 	</div>
 	
 	<%-- Similar Properties Bar --%>

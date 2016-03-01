@@ -6,7 +6,7 @@
 <spring:url value="/resources/images/unknown.png" var="agentImage" />
 
 <div class="panel panel-default box-shadow-3dp" id="property-section-agent">
- 	<div class="panel-heading">Agent</div>
+ 	<div class="panel-heading">Realestate Agent</div>
 	<div class="panel-body">
  		<div class="row">
  		
