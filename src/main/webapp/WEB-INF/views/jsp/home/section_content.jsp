@@ -22,23 +22,4 @@
 		<jsp:include page="section_list.jsp"></jsp:include>
 	</div>
 
-<%-- 	<jsp:include page="section_list.jsp"></jsp:include>
-
-	<div class="row">
-		<div class="col-xs-12 col-sm-8 col-md-8">
-			<h3>Featured Properties</h3>
-		</div>
-		<div class="hidden-xs col-sm-4 col-md-4 text-right">
-			<ul class="pagination">
-				<li class="active"><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">5</a></li>
-			</ul>
-		</div>
-	</div>
-	
-	<jsp:include page="section_list.jsp"></jsp:include>
- --%>	
 </div>
