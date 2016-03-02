@@ -10,7 +10,7 @@
 		<a href="#" class="list-group-item">Images</a> 
 		<a href="#" class="list-group-item">Property Details</a>
 		<a href="#" class="list-group-item">Realestate Agent</a>
-		<a href="#" class="list-group-item">Contact Us</a> 
+		<a href="#" class="list-group-item">Enquiries</a> 
 		<a href="#" class="list-group-item">Property Location</a> 
 	</div>
 	
