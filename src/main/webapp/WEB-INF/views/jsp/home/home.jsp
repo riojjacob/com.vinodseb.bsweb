@@ -24,7 +24,7 @@
 		<div class="panel-heading" id="main-panel-heading">
 			<jsp:include page="../section_navbar.jsp"></jsp:include>
 			<jsp:include page="../section_carousel.jsp"></jsp:include>
-			<jsp:include page="../filter-bar.jsp"></jsp:include>
+			<jsp:include page="../section_filterbar.jsp"></jsp:include>
 		</div>
 		<div class="panel-body" id="main-panel-body">
 			<jsp:include page="list-box.jsp"></jsp:include>
