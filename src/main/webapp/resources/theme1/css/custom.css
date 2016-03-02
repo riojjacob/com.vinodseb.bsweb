@@ -141,7 +141,7 @@ html,body{
 }
 
 @media (max-width: 767px) {
-    #footer-container .list-group { text-align:center }
+    #common-section-footer .list-group { text-align:center }
 }
 
 
@@ -173,3 +173,8 @@ html,body{
 #property-section-images .row a{
 	border:0px;
 }
+/*******************Common Footer**************************/
+@media (max-width: 767px) {
+    #common-section-footer .list-group { text-align:center }
+}
+

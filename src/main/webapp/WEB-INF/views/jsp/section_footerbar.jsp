@@ -2,7 +2,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-<div class="container" id="footer-container">
+<div class="container" id="common-section-footer">
 	<div class="row">
 		<div class="col-md-2">
 			<div class="list-group">
