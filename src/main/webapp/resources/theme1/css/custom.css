@@ -136,11 +136,6 @@ html,body{
 	margin-bottom: 0px;
 }
 
-@media (max-width: 767px) {
-    #common-section-footer .list-group { text-align:center }
-}
-
-
 /*******************PAGE SECTION**************************/
 /*******************Property Details**************************/
 #property-section-details .row *{
