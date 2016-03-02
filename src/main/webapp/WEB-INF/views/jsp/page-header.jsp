@@ -28,6 +28,6 @@
 <body>
 	<div class="panel panel-default" id="main-panel">
 		<div class="panel-heading box-shadow-3dp" id="main-panel-heading">
-			<jsp:include page="nav-bar.jsp"></jsp:include>
+			<jsp:include page="section_navbar.jsp"></jsp:include>
 		</div>
 		<div class="panel-body" id="main-panel-body">

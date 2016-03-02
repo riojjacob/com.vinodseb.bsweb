@@ -16,12 +16,13 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
 </head>
 <body>
 	<div class="panel panel-default" id="main-panel">
 		<div class="panel-heading" id="main-panel-heading">
-			<jsp:include page="../nav-bar.jsp"></jsp:include>
+			<jsp:include page="../section_navbar.jsp"></jsp:include>
 			<jsp:include page="../carousel.jsp"></jsp:include>
 			<jsp:include page="../filter-bar.jsp"></jsp:include>
 		</div>
