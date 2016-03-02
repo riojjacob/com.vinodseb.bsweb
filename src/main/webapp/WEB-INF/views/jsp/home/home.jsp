@@ -27,7 +27,7 @@
 			<jsp:include page="../section_filterbar.jsp"></jsp:include>
 		</div>
 		<div class="panel-body" id="main-panel-body">
-			<jsp:include page="list-box.jsp"></jsp:include>
+			<jsp:include page="section_content.jsp"></jsp:include>
 		</div>
 		<div class="panel-footer" id="main-panel-footer">
 			<jsp:include page="../section_footerbar.jsp"></jsp:include>
