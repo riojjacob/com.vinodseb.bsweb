@@ -30,7 +30,7 @@
 			<jsp:include page="list-box.jsp"></jsp:include>
 		</div>
 		<div class="panel-footer" id="main-panel-footer">
-			<jsp:include page="../footer-bar.jsp"></jsp:include>
+			<jsp:include page="../section_footerbar.jsp"></jsp:include>
 		</div>
 	</div>
 </body>
