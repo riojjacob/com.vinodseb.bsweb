@@ -2,15 +2,11 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-
-<div id="home-section-list">
-	<c:forEach begin="1" end="2" varStatus="r_counter">
+<div id="home-section-list" >
 	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-3 list-content" data-ng-repeat="y in x">
 	
-		<c:forEach begin="1" end="4" varStatus="c_counter">
-		<div class="col-xs-12 col-sm-6 col-md-3 list-content">
-	
-			<spring:url value="/resources/images/80${c_counter.count }.jpg" var="ad_img" />
+			<spring:url value="/resources/images/80{{y}}.jpg" var="ad_img" />
 			<spring:url value="/property" var="ad_page" />
 			<c:set var="model_id" value="ad_modal_${r_counter.count}_${c_counter.count}" />
 			
@@ -101,9 +97,7 @@
 			</div>
 			<!-- End Modal -->
 		</div>
-		</c:forEach>
 		<!-- End Column -->
 	</div>
-	</c:forEach>
 	<!-- End Row -->
 </div>
