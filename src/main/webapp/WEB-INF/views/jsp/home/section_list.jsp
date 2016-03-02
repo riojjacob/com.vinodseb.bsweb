@@ -48,14 +48,49 @@
 						<div class="modal-body">
 							<img src="${ad_img}" class="img-responsive img-rounded center-block" alt="Cinque Terre">
 							<div class="list-group">
-								<div class="list-group-item">Location : Near St.Thomas School, Mukkola</div>
-								<div class="list-group-item">Plot Area : 8.5 Cent</div>
-								<div class="list-group-item">Built Area : 2200 Sq.Feet</div>
-								<div class="list-group-item">Bedroom(s) : 3</div>
-								<div class="list-group-item">Approach Road : </div>
-								<div class="list-group-item">Nearby Facilities : </div>
-								<div class="list-group-item">Posted By : Owner</div>
-							</div>					
+								<div class="list-group-item">
+									<div class="row">
+										<label class="col-xs-4">Location</label>
+										<div class="col-xs-8">Near St.Thomas School, Mukkola</div>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<div class="row">
+										<label class="col-xs-4">Plot Area</label>
+										<div class="col-xs-8">8.5 Cent</div>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<div class="row">
+										<label class="col-xs-4">Built Area</label>
+										<div class="col-xs-8">2200 Sq.Feet</div>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<div class="row">
+										<label class="col-xs-4">Bed Rooms</label>
+										<div class="col-xs-8">3</div>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<div class="row">
+										<label class="col-xs-4">Approach Road</label>
+										<div class="col-xs-8"></div>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<div class="row">
+										<label class="col-xs-4">Facilities</label>
+										<div class="col-xs-8"></div>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<div class="row">
+										<label class="col-xs-4">Posted By</label>
+										<div class="col-xs-8">Owner</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-primary" onclick="window.location.href='property'">View Details</button>
