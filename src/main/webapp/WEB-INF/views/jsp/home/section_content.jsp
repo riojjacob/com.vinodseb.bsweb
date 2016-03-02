@@ -19,7 +19,7 @@
 		</div>
 	</div>
 
-	<jsp:include page="list.jsp"></jsp:include>
+	<jsp:include page="section_list.jsp"></jsp:include>
 
 	<div class="row">
 		<div class="col-xs-12 col-sm-8 col-md-8">
@@ -36,6 +36,6 @@
 		</div>
 	</div>
 	
-	<jsp:include page="list.jsp"></jsp:include>
+	<jsp:include page="section_list.jsp"></jsp:include>
 	
 </div>
