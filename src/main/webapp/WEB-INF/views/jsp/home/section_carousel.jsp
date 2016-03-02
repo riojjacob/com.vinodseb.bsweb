@@ -7,7 +7,7 @@
 <spring:url value="/resources/images/main3.jpg" var="main3Img" />
 <spring:url value="/resources/images/main4.jpg" var="main4Img" />
 
-<div class="carousel slide" data-ride="carousel" data-interval="10000">
+<div class="carousel slide" id="home-section-carousel" data-ride="carousel" data-interval="10000">
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
 		<li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
