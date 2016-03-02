@@ -2,7 +2,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-<div class="container" id="filter-container">
+<div class="container" id="home-section-filterbar">
 	<div class="row">
 		<form>
 			<div class="col-sm-11 col-xs-12">
