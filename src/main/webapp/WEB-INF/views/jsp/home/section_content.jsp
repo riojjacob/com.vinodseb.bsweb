@@ -2,7 +2,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-<div class="container" id="list-container">
+<div class="container" id="home-section-content">
 	
 	<div class="row">
 		<div class="col-xs-12 col-sm-8 col-md-8">
