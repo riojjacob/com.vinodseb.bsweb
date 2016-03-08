@@ -3,6 +3,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <spring:url value="/resources/css/custom.css" var="customCss" />
+<spring:url value="/resources/js/property/app.js" var="propertyAppJs" />
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +18,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<script src="${propertyAppJs }"></script>
 
 <style type="text/css">
 #main-panel-body {

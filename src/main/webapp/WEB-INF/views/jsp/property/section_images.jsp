@@ -5,12 +5,12 @@
 <%-- Property Image --%>
 <spring:url value="/resources/images/802.jpg" var="propertyImage1" />
 
-<div class="panel panel-default box-shadow-3dp" id="property-section-images" data-ng-app="" data-ng-init="path='${propertyImage1}'">
+<div class="panel panel-default box-shadow-3dp" id="property-section-images" data-ng-controller="imageController" data-ng-init="image.path='${propertyImage1}'">
  	<div class="panel-heading">Image &amp; Title</div>
 	<div class="panel-body">
 		
 		<%-- Main Image --%>
-		<img data-ng-src="{{path}}" class="img-rounded img-responsive"/>
+		<img data-ng-src="{{image.path}}" class="img-rounded img-responsive"/>
 		
 		<%-- Image Thumbs, Thumbs are hidden on small screens --%>
 		<div class="row hidden-xs hidden-sm ">
@@ -18,7 +18,7 @@
 			<spring:url value="/resources/images/80${counter.count}.jpg" var="propertyImage2" />
 			<div class="col-sm-2">
 				<a href="#" class="thumbnail"> 
-   					<img data-ng-src="${propertyImage2}" class="img-rounded img-responsive" alt="Alternate Image" data-ng-click="path='${propertyImage2}'"/>
+   					<img class="img-rounded img-responsive" alt="Alternate Image" data-ng-src="${propertyImage2}" data-ng-click="image.setPath($event)"/>
  				</a>
 			</div>
 			</c:forEach>
