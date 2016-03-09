@@ -15,11 +15,11 @@
 		
 		<%-- Main Contents --%>
 		<div class="col-xs-12 col-sm-12 col-md-9 page-content">
-			<jsp:include page="section_images.jsp"></jsp:include>
+			<%@include file="section_images.html" %>
 			<jsp:include page="section_details.jsp"></jsp:include>
 			<jsp:include page="section_agent.jsp"></jsp:include>
 			<jsp:include page="section_contact.jsp"></jsp:include>
-			<jsp:include page="section_location.jsp"></jsp:include>
+			<%@include file="section_location.html" %>
 		</div>
 		
 	</div>
