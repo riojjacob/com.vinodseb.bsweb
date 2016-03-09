@@ -10,44 +10,55 @@
 		<div class="list-group">
 			<div class="list-group-item">
 				<div class="row">
+					<label class="col-xs-4 col-sm-3">Listed Price</label>
+					<div class="col-xs-4 col-sm-9">&#8377; {{property.listedPrice}}</div>
+				</div>
+			</div>
+			<div class="list-group-item">
+				<div class="row">
 					<label class="col-xs-4 col-sm-3">Location</label>
-					<div class="col-xs-8 col-sm-9">Near St.Thomas School, Mukkola</div>
+					<div class="col-xs-8 col-sm-9">
+						{{property.address.street}},
+						{{property.address.city}},
+						{{property.address.state}},
+						{{property.address.postalCode}}
+					</div>
 				</div>
 			</div>
 			<div class="list-group-item">
 				<div class="row">
 					<label class="col-xs-4 col-sm-3">Plot Area</label>
-					<div class="col-xs-4 col-sm-9">8.5 Cent</div>
+					<div class="col-xs-4 col-sm-9">{{property.area}} Cent</div>
 				</div>
 			</div>
 			<div class="list-group-item">
 				<div class="row">
 					<label class="col-xs-4 col-sm-3">Built Area</label>
-					<div class="col-xs-8 col-sm-9">2200 Sq.Feet</div>
+					<div class="col-xs-8 col-sm-9">{{property.builtupArea}} Sq.Feet</div>
 				</div>
 			</div>
 			<div class="list-group-item">
 				<div class="row">
 					<label class="col-xs-4 col-sm-3">Bed Rooms</label>
-					<div class="col-xs-8 col-sm-9">3</div>
+					<div class="col-xs-8 col-sm-9">{{property.bedRooms}}</div>
 				</div>
 			</div>
 			<div class="list-group-item">
 				<div class="row">
-					<label class="col-xs-4 col-sm-3">Approach Road</label>
-					<div class="col-xs-8 col-sm-9"></div>
+					<label class="col-xs-4 col-sm-3">Bath Rooms</label>
+					<div class="col-xs-8 col-sm-9">{{property.bathRooms}}</div>
 				</div>
 			</div>
 			<div class="list-group-item">
 				<div class="row">
 					<label class="col-xs-4 col-sm-3">Facilities</label>
-					<div class="col-xs-8 col-sm-9"></div>
+					<div class="col-xs-8 col-sm-9">{{property.facilities}}</div>
 				</div>
 			</div>
 			<div class="list-group-item">
 				<div class="row">
 					<label class="col-xs-4 col-sm-3">Posted By</label>
-					<div class="col-xs-8 col-sm-9">Owner</div>
+					<div class="col-xs-8 col-sm-9">{{property.postedBy}} on {{property.postedDate | date:'medium'}}</div>
 				</div>
 			</div>
 		</div>

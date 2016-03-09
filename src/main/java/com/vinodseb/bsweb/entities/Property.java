@@ -41,6 +41,8 @@ public class Property {
 	//Open, Sold, Closed,
 	private String status;
 	
+	private String googleMap;
+	
 	public Long getId() {
 		return id;
 	}
@@ -167,5 +169,21 @@ public class Property {
 
 	public void setSeller(Seller seller) {
 		this.seller = seller;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getGoogleMap() {
+		return googleMap;
+	}
+
+	public void setGoogleMap(String googleMap) {
+		this.googleMap = googleMap;
 	}
 }

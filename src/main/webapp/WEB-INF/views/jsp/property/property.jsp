@@ -5,7 +5,7 @@
 <%-- Page Header --%>
 <jsp:include page="../page-header.jsp"></jsp:include>
 
-<div class="container" data-ng-app="propertyApp">
+<div class="container" data-ng-app="propertyApp" data-ng-controller="propertyController">
 	<div class="row">
 	
 		<%-- Sidenav --%>
@@ -17,7 +17,7 @@
 		<div class="col-xs-12 col-sm-12 col-md-9 page-content">
 			<%@include file="section_images.html" %>
 			<jsp:include page="section_details.jsp"></jsp:include>
-			<jsp:include page="section_agent.jsp"></jsp:include>
+			<%@include file="section_agent.html" %>
 			<jsp:include page="section_contact.jsp"></jsp:include>
 			<%@include file="section_location.html" %>
 		</div>

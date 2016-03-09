@@ -33,6 +33,7 @@ public class PropertyRestController {
 		property.setPostedDate(new Date());
 		property.setStreet("Random Street");
 		property.setTitle("House For Sale");
+		property.setGoogleMap("<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.773491263047!2d55.39660961550273!3d25.345380731891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5bd70d8ac679%3A0x3182efd3987a7643!2sMega+Mall+Sharjah!5e0!3m2!1sen!2sae!4v1457546298483\" width=\"800\" height=\"600\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>");
 
 		PropertyType propertyType = new PropertyType();
 		propertyType.setId(1L);

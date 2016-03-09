@@ -4,7 +4,7 @@
 
 <div id="sidebar-container" id="property-section-sidenav">
 
-	<%-- Navigation Bar --%>
+	<!-- Navigation Bar -->
 	<div class="list-group box-shadow-3dp">
 		<a href="#" class="list-group-item active">Property</a> 
 		<a href="#" class="list-group-item">Images</a> 
@@ -14,7 +14,7 @@
 		<a href="#" class="list-group-item">Property Location</a> 
 	</div>
 	
-	<%-- Similar Properties Bar --%>
+	<!-- Similar Properties Bar -->
 	<jsp:include page="section_similar_properties.jsp"></jsp:include>
 	
 </div>
