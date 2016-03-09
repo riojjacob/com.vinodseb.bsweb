@@ -131,4 +131,15 @@ public class PropertyRestController {
 		
 		return property;
 	}
+	
+	@RequestMapping(path = "/similar", method = RequestMethod.GET)
+	public List<Property> getPropertyList() {
+		List<Property> propertyList = new ArrayList<Property>();
+		
+		for(int i = 0; i < 3; i++) {
+			propertyList.add(getProperty());
+		}
+		
+		return propertyList;
+	}
 }

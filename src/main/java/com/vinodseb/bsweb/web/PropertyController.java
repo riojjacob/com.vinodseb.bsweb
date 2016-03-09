@@ -6,9 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
+@RequestMapping(value = "/property")
 public class PropertyController {
 
-	@RequestMapping(value = "/property", method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	public String displayProperty(Model model) {
 		return "property/property";
 	}

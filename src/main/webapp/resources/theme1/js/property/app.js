@@ -26,3 +26,15 @@ app.controller('propertyController', function($scope, $log, $http, $sce){
 		$log.debug(data);
 	});
 });
+
+app.controller('similarPropertiesController', function($scope, $log, $http, $window){
+	$http.get('property/json/similar')
+	.success(function(data){
+		$scope.similarProperties = data;
+		$log.debug(data);
+	});
+	
+	$scope.go = function(id) {
+		$window.location.href = 'property';
+	};
+});

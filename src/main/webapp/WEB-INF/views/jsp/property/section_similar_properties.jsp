@@ -1,8 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-
-<div id="property-section-similar">
+<div id="property-section-similar" data-ng-controller="similarPropertiesController">
 
 	<%-- Title --%>
 	<div class="list-group box-shadow-3dp">
@@ -10,41 +6,36 @@
 	</div>
 	
 	<%-- Similar Property Loop --%>
-	<c:forEach begin="1" end="4" varStatus="cCounter">
-	
-		<spring:url value="/resources/images/80${cCounter.count }.jpg" var="mainImage" />
-		<spring:url value="/property" var="propertyPage" />
-		<c:set value="modal-${cCounter.count}" var="modelId" />
+	<div class="list-item box-shadow-3dp" data-ng-repeat="similarProperty in similarProperties">
 		
-		<div class="list-item box-shadow-3dp">
-		
-			<%-- Main Image --%>
-			<div class="image">
-				<div class="dropdown">
-					<button type="button" class="btn btn-default btn-sm dropdown-toggle box-shadow--3dp" data-toggle="dropdown" aria-haspopup="true" >
-						<span class="glyphicon glyphicon-menu-hamburger"></span>
-					</button>
-					<ul class="dropdown-menu dropdown-menu-right">
-						<li><a href="#" data-toggle="modal" data-target="#${modelId}">Quick View</a></li>
-						<li><a href="${propertyPage}">Property Details</a></li>
-					</ul>
-				</div>
-				<a href="#" data-toggle="modal" data-target="#${modelId}">
-					<img src="${mainImage}" class="img-responsive" alt="Cinque Terre">
-				</a>
+		<%-- Main Image --%>
+		<div class="image">
+			<div class="dropdown">
+				<button type="button" class="btn btn-default btn-sm dropdown-toggle box-shadow--3dp" data-toggle="dropdown" aria-haspopup="true" >
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-right">
+					<li><a href="#" data-toggle="modal" data-target="#sp{{similarProperty.id}}">Quick View</a></li>
+					<li><a href="property/{{similarProperty.id}}">Property Details</a></li>
+				</ul>
 			</div>
-			
-			<%-- Basic Details --%>
-			<ul class="list-group">
-				<li class="list-group-item">2BD.2BR.2400SqFt</li>
-				<li class="list-group-item">Abu Shagara, Sharjah</li>
-				<li class="list-group-item list-group-item-default">AED 23212.23</li>
-			</ul>
-			
+			<a href="#" data-toggle="modal" data-target="#sp{{similarProperty.id}}">
+				<img data-ng-src="{{similarProperty.imageList[1].path}}" class="img-responsive" alt="Cinque Terre">
+			</a>
 		</div>
-		
+			
+		<%-- Basic Details --%>
+		<ul class="list-group">
+			<li class="list-group-item">2BD.2BR.2400SqFt</li>
+			<li class="list-group-item">
+				{{similarProperty.address.street | uppercase}}, 
+				{{similarProperty.address.city | uppercase}} 
+			</li>
+			<li class="list-group-item list-group-item-default">&#8377; {{similarProperty.listedPrice}}</li>
+		</ul>
+
 		<!-- Quick View Window -->
-		<div id="${modelId}" class="modal fade" role="dialog">
+		<div id="sp{{similarProperty.id}}" class="modal fade" role="dialog">
 			<div class="modal-dialog quick-view-window">
 				<!-- Modal content-->
 				<div class="modal-content">
@@ -53,60 +44,76 @@
 						<h4 class="modal-title">House For Sale</h4>
 					</div>
 					<div class="modal-body">
-						<img src="${mainImage}" class="img-responsive img-rounded center-block" alt="Main Image">
+						<img  data-ng-src="{{similarProperty.imageList[1].path}}" class="img-responsive img-rounded center-block" alt="Main Image">
+
+						<!-- Property Details : TODO change this to a table? -->
 						<div class="list-group">
 							<div class="list-group-item">
 								<div class="row">
-									<label class="col-xs-4">Location</label>
-									<div class="col-xs-8">Near St.Thomas School, Mukkola</div>
+									<label class="col-xs-4 col-sm-3">Listed Price</label>
+									<div class="col-xs-4 col-sm-9">&#8377; {{similarProperty.listedPrice}}</div>
 								</div>
 							</div>
 							<div class="list-group-item">
 								<div class="row">
-									<label class="col-xs-4">Plot Area</label>
-									<div class="col-xs-8">8.5 Cent</div>
+									<label class="col-xs-4 col-sm-3">Location</label>
+									<div class="col-xs-8 col-sm-9">
+										{{similarProperty.address.street}},
+										{{similarProperty.address.city}},
+										{{similarProperty.address.state}},
+										{{similarProperty.address.postalCode}}
+									</div>
 								</div>
 							</div>
 							<div class="list-group-item">
 								<div class="row">
-									<label class="col-xs-4">Built Area</label>
-									<div class="col-xs-8">2200 Sq.Feet</div>
+									<label class="col-xs-4 col-sm-3">Plot Area</label>
+									<div class="col-xs-4 col-sm-9">{{similarProperty.area}} Cent</div>
 								</div>
 							</div>
 							<div class="list-group-item">
 								<div class="row">
-									<label class="col-xs-4">Bed Rooms</label>
-									<div class="col-xs-8">3</div>
+									<label class="col-xs-4 col-sm-3">Built Area</label>
+									<div class="col-xs-8 col-sm-9">{{similarProperty.builtupArea}} Sq.Feet</div>
 								</div>
 							</div>
 							<div class="list-group-item">
 								<div class="row">
-									<label class="col-xs-4">Approach Road</label>
-									<div class="col-xs-8"></div>
+									<label class="col-xs-4 col-sm-3">Bed Rooms</label>
+									<div class="col-xs-8 col-sm-9">{{similarProperty.bedRooms}}</div>
 								</div>
 							</div>
 							<div class="list-group-item">
 								<div class="row">
-									<label class="col-xs-4">Facilities</label>
-									<div class="col-xs-8"></div>
+									<label class="col-xs-4 col-sm-3">Bath Rooms</label>
+									<div class="col-xs-8 col-sm-9">{{similarProperty.bathRooms}}</div>
 								</div>
 							</div>
 							<div class="list-group-item">
 								<div class="row">
-									<label class="col-xs-4">Posted By</label>
-									<div class="col-xs-8">Owner</div>
+									<label class="col-xs-4 col-sm-3">Facilities</label>
+									<div class="col-xs-8 col-sm-9">{{similarProperty.facilities}}</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div class="row">
+									<label class="col-xs-4 col-sm-3">Posted By</label>
+									<div class="col-xs-8 col-sm-9">{{similarProperty.postedBy}} on {{similarProperty.postedDate | date:'medium'}}</div>
 								</div>
 							</div>
 						</div>
+
+						
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-primary" onclick="window.location.href='${propertyPage}'">Property Details</button>
+						<button type="button" class="btn btn-primary" data-ng-click="go(similarProperty.id)">Property Details</button>
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- End Modal -->
-		
-	</c:forEach>
+
+	</div>
+
 </div>
