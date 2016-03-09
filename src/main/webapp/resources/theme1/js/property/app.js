@@ -4,22 +4,15 @@ app.config(function($logProvider) {
 	$logProvider.debugEnabled(true);
 });
 
-
 app.controller('imageController', function($scope, $log, $http) {
-	
 	$http.get('image/12')
-		.success( function(data) {
+		.success( function(data) {			
 			$scope.images = data;
+			$scope.selectedImage = angular.copy($scope.images[0]);
 			$log.debug($scope.images);
-	}),
-
-	$scope.image = {
-		path : '',
-		setPath : function($event) {
-			$log.debug($event.target.src);
-			$scope.image.path = $event.target.src;
-		}
-	}
+	});
+	
+	$scope.changeImage = function(image) {
+		$scope.selectedImage = image;
+	};
 });
-
-
