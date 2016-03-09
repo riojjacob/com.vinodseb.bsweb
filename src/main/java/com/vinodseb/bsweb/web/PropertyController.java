@@ -13,4 +13,9 @@ public class PropertyController {
 	public String displayProperty(Model model) {
 		return "property/property";
 	}
+	
+	@RequestMapping(value="/{id}", method = RequestMethod.GET)
+	public String displayProperty2(Model model) {
+		return "property/property";
+	}
 }
