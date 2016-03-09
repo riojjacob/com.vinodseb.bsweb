@@ -14,5 +14,6 @@ app.controller('imageController', function($scope, $log, $http) {
 	
 	$scope.changeImage = function(image) {
 		$scope.selectedImage = image;
+		$log.debug($scope.selectedImage);
 	};
 });
