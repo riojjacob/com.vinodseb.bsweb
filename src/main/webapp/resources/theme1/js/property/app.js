@@ -35,6 +35,6 @@ app.controller('similarPropertiesController', function($scope, $log, $http, $win
 	});
 	
 	$scope.go = function(id) {
-		$window.location.href = 'property';
+		$window.location.href = 'property/' + id;
 	};
 });
