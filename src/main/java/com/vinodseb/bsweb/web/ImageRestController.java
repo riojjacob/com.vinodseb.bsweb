@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.vinodseb.bsweb.entities.Image;
 
 @RestController
-@RequestMapping(value = "/image")
-public class ImageController {
+@RequestMapping(value = "/image/json")
+public class ImageRestController {
 
 	@RequestMapping(path = "/{id}", method = RequestMethod.GET)
 	public List<Image> getImageList() {

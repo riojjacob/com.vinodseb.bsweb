@@ -5,7 +5,7 @@ app.config(function($logProvider) {
 });
 
 app.controller('imageController', function($scope, $log, $http) {
-	$http.get('image/12')
+	$http.get('image/json/12')
 		.success( function(data) {			
 			$scope.images = data;
 			$scope.selectedImage = angular.copy($scope.images[0]);
