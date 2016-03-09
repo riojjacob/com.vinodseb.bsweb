@@ -15,13 +15,37 @@ public class ImageController {
 
 	@RequestMapping(path = "/{id}", method = RequestMethod.GET)
 	public List<Image> getImageList() {
+
+		List<Image> imageList = new ArrayList<>();
 		
 		Image image = new Image();
 		image.setId(1L);
-		image.setPath("/image/801.jpg");
+		image.setPath("resources/images/801.jpg");
+		imageList.add(image);
 		
+		image = new Image();
+		image.setId(2L);
+		image.setPath("resources/images/802.jpg");
+		imageList.add(image);
 		
-		List<Image> imageList = new ArrayList<>();
+		image = new Image();
+		image.setId(3L);
+		image.setPath("resources/images/803.jpg");
+		imageList.add(image);
+		
+		image = new Image();
+		image.setId(4L);
+		image.setPath("resources/images/804.jpg");
+		imageList.add(image);
+		
+		image = new Image();
+		image.setId(5L);
+		image.setPath("resources/images/805.jpg");
+		imageList.add(image);
+		
+		image = new Image();
+		image.setId(6L);
+		image.setPath("resources/images/806.jpg");
 		imageList.add(image);
 		
 		return imageList;

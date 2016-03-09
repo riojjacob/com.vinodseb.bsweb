@@ -14,14 +14,11 @@
 		
 		<%-- Image Thumbs, Thumbs are hidden on small screens --%>
 		<div class="row hidden-xs hidden-sm ">
-			<c:forEach begin="1" end="6" varStatus="counter">
-			<spring:url value="/resources/images/80${counter.count}.jpg" var="propertyImage2" />
-			<div class="col-sm-2">
+			<div class="col-sm-2" data-ng-repeat="image1 in images">
 				<a href="#" class="thumbnail"> 
-   					<img class="img-rounded img-responsive" alt="Alternate Image" data-ng-src="${propertyImage2}" data-ng-click="image.setPath($event)"/>
+   					<img class="img-rounded img-responsive" alt="Alternate Image" data-ng-src="{{image1.path}}" data-ng-click="image.setPath($event)"/>
  				</a>
 			</div>
-			</c:forEach>
 		</div>
 		
 	</div>
