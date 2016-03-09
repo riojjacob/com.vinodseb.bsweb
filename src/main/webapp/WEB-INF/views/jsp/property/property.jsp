@@ -15,11 +15,12 @@
 		
 		<%-- Main Contents --%>
 		<div class="col-xs-12 col-sm-12 col-md-9 page-content">
-			<%@include file="section_images.html" %>
+			
+			<div data-ng-include="'resources/views/property/section_images.html'"></div>
 			<jsp:include page="section_details.jsp"></jsp:include>
-			<%@include file="section_agent.html" %>
+			<div data-ng-include="'resources/views/property/section_agent.html'"></div>
 			<jsp:include page="section_contact.jsp"></jsp:include>
-			<%@include file="section_location.html" %>
+			<div data-ng-include="'resources/views/property/section_location.html'"></div>
 		</div>
 		
 	</div>
