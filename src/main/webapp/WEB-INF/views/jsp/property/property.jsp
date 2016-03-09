@@ -10,7 +10,7 @@
 	
 		<%-- Sidenav --%>
 		<div class="hidden-xs hidden-sm col-md-3 sidenav-content">
-			<jsp:include page="section_sidenav.jsp"></jsp:include>
+			<div data-ng-include="'resources/views/property/section_sidenav.html'"></div>
 		</div>
 		
 		<%-- Main Contents --%>
