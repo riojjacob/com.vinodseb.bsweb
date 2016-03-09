@@ -15,6 +15,6 @@
 	</div>
 	
 	<!-- Similar Properties Bar -->
-	<jsp:include page="section_similar_properties.jsp"></jsp:include>
+	<div data-ng-include="'resources/views/property/section_similar_properties.html'"></div>
 	
 </div>

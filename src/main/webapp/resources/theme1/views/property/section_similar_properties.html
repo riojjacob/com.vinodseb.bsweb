@@ -1,14 +1,14 @@
 <div id="property-section-similar" data-ng-controller="similarPropertiesController">
 
-	<%-- Title --%>
+	<!-- Title -->
 	<div class="list-group box-shadow-3dp">
 		<a href="#" class="list-group-item active">Similar Properties</a> 
 	</div>
 	
-	<%-- Similar Property Loop --%>
+	<!-- Similar Property Loop -->
 	<div class="list-item box-shadow-3dp" data-ng-repeat="similarProperty in similarProperties">
 		
-		<%-- Main Image --%>
+		<!-- Main Image -->
 		<div class="image">
 			<div class="dropdown">
 				<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" >
@@ -24,9 +24,9 @@
 			</a>
 		</div>
 			
-		<%-- Basic Details --%>
+		<!-- Basic Details -->
 		<ul class="list-group">
-			<li class="list-group-item">2BD.2BR.2400SqFt</li>
+			<li class="list-group-item">{{similarProperty.bedRooms}}BD.{{similarProperty.bathRooms}}BR.{{similarProperty.area}}SqFt</li>
 			<li class="list-group-item">
 				{{similarProperty.address.street | uppercase}}, 
 				{{similarProperty.address.city | uppercase}} 
