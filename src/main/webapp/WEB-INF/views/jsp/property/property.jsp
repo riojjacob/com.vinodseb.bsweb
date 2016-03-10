@@ -14,18 +14,16 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
-
 <script src="resources/js/property/app.js"></script>
 
 </head>
-<body data-ng-app="propertyApp">
+<body data-ng-app="propertyApp" data-ng-controller="propertyController">
 	<div class="panel panel-default" id="main-panel">
-		<div class="panel-heading box-shadow-3dp" id="main-panel-heading">
+		<div class="panel-heading" id="main-panel-heading">
 			<div data-ng-include="'resources/views/section_navbar.html'"></div>
 		</div>
 		<div class="panel-body" id="main-panel-body">
-
-			<div class="container" data-ng-controller="propertyController">
+			<div class="container">
 				<div class="row">
 				
 					<!-- Sidenav -->
@@ -35,7 +33,6 @@
 					
 					<!-- Main Contents -->
 					<div class="col-xs-12 col-sm-12 col-md-9 page-content">
-						
 						<div data-ng-include="'resources/views/property/section_images.html'"></div>
 						<div data-ng-include="'resources/views/property/section_details.html'"></div>
 						<div data-ng-include="'resources/views/property/section_agent.html'"></div>
@@ -45,7 +42,6 @@
 					
 				</div>
 			</div>
-		
 		</div>
 		<div class="panel-footer" id="main-panel-footer">
 			<div data-ng-include="'resources/views/section_footerbar.html'"></div>
