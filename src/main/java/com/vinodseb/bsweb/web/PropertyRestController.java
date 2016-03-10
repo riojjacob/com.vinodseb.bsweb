@@ -133,10 +133,21 @@ public class PropertyRestController {
 	}
 	
 	@RequestMapping(path = "/similar", method = RequestMethod.GET)
-	public List<Property> getPropertyList() {
+	public List<Property> getSimilarPropertyList() {
 		List<Property> propertyList = new ArrayList<Property>();
 		
 		for(int i = 0; i < 3; i++) {
+			propertyList.add(getProperty());
+		}
+		
+		return propertyList;
+	}
+	
+	@RequestMapping(path = "/list", method = RequestMethod.GET)
+	public List<Property> getPropertyList() {
+		List<Property> propertyList = new ArrayList<Property>();
+		
+		for(int i = 0; i < 20; i++) {
 			propertyList.add(getProperty());
 		}
 		
