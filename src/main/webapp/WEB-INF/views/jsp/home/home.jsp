@@ -30,7 +30,7 @@
 			<jsp:include page="section_filterbar.jsp"></jsp:include>
 		</div>
 		<div class="panel-body" id="main-panel-body">
-			<jsp:include page="section_content.jsp"></jsp:include>
+			<div data-ng-include="'resources/views/home/section_content.html'"></div>
 		</div>
 		<div class="panel-footer" id="main-panel-footer">
 			<div data-ng-include="'resources/views/section_footerbar.html'"></div>
