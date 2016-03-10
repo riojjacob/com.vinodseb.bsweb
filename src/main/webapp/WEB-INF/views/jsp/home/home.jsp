@@ -27,7 +27,7 @@
 		<div class="panel-heading" id="main-panel-heading">
 			<div data-ng-include="'resources/views/section_navbar.html'"></div>
 			<div data-ng-include="'resources/views/home/section_carousel.html'"></div>
-			<jsp:include page="section_filterbar.jsp"></jsp:include>
+			<div data-ng-include="'resources/views/home/section_filterbar.html'"></div>
 		</div>
 		<div class="panel-body" id="main-panel-body">
 			<div data-ng-include="'resources/views/home/section_content.html'"></div>
