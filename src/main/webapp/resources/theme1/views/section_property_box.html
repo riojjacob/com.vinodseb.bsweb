@@ -1,0 +1,105 @@
+<div class="list-item box-shadow-3dp">
+
+	<div class="image">
+		<div class="dropdown">
+			<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" >
+				<span class="glyphicon glyphicon-menu-hamburger"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-menu-right">
+				<li><a href="#" data-toggle="modal" data-target="{{'#pm'+ prop.id}}">Quick View</a></li>
+				<li><a href="property/{{propety.id}}">Property Details</a></li>
+			</ul>
+		</div>
+		<a href="#" data-toggle="modal" data-target="{{'#pm'+ prop.id}}">
+			<img data-ng-src="{{prop.imageList[1].path}}" class="img-responsive" alt="Cinque Terre">
+		</a>
+	</div>
+	
+	<ul class="list-group">
+		<li class="list-group-item">{{prop.bedRooms}}BD.{{prop.bathRooms}}BR.{{prop.area}}SqFt</li>
+		<li class="list-group-item">
+			{{prop.address.street | uppercase}}, 
+			{{prop.address.city | uppercase}} 
+		</li>
+		<li class="list-group-item list-group-item-default">&#8377; {{prop.listedPrice}}</li>
+	</ul>
+	
+	<!-- Modal -->
+	<div id="{{'pm'+ prop.id}}" class="modal fade" role="dialog">
+		<div class="modal-dialog quick-view-window">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">House For Sale</h4>
+				</div>
+				<div class="modal-body">
+					<img data-ng-src="{{prop.imageList[1].path}}" class="img-responsive img-rounded center-block" alt="Cinque Terre">
+					
+					<div class="list-group">
+						<div class="list-group-item">
+							<div class="row">
+								<label class="col-xs-4 col-sm-3">Listed Price</label>
+								<div class="col-xs-4 col-sm-9">&#8377; {{prop.listedPrice}}</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<label class="col-xs-4 col-sm-3">Location</label>
+								<div class="col-xs-8 col-sm-9">
+									{{prop.address.street}},
+									{{prop.address.city}},
+									{{prop.address.state}},
+									{{prop.address.postalCode}}
+								</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<label class="col-xs-4 col-sm-3">Plot Area</label>
+								<div class="col-xs-4 col-sm-9">{{prop.area}} Cent</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<label class="col-xs-4 col-sm-3">Built Area</label>
+								<div class="col-xs-8 col-sm-9">{{prop.builtupArea}} Sq.Feet</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<label class="col-xs-4 col-sm-3">Bed Rooms</label>
+								<div class="col-xs-8 col-sm-9">{{prop.bedRooms}}</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<label class="col-xs-4 col-sm-3">Bath Rooms</label>
+								<div class="col-xs-8 col-sm-9">{{prop.bathRooms}}</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<label class="col-xs-4 col-sm-3">Facilities</label>
+								<div class="col-xs-8 col-sm-9">{{prop.facilities}}</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<label class="col-xs-4 col-sm-3">Posted By</label>
+								<div class="col-xs-8 col-sm-9">{{prop.postedBy}} on {{prop.postedDate | date:'medium'}}</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-ng-click="go(prop.id)">View Details</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Modal -->
+	
+</div>
