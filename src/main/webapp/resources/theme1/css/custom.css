@@ -35,6 +35,7 @@ html,body{
 }
 
 #main-panel-body{
+	margin-top: 51px;
 	min-height: 100%;
 }
 
