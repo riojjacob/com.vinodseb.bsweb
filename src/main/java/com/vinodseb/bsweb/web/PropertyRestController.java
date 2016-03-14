@@ -16,7 +16,7 @@ import com.vinodseb.bsweb.entities.PropertyType;
 import com.vinodseb.bsweb.entities.Seller;
 
 @RestController
-@RequestMapping(value = "/property/json")
+@RequestMapping(value = "/json/property")
 public class PropertyRestController {
 
 	@RequestMapping(path = "/{id}", method = RequestMethod.GET)
@@ -132,7 +132,7 @@ public class PropertyRestController {
 		return property;
 	}
 	
-	@RequestMapping(path = "/similar", method = RequestMethod.GET)
+	@RequestMapping(path = "/similar/{id}", method = RequestMethod.GET)
 	public List<Property> getSimilarPropertyList() {
 		List<Property> propertyList = new ArrayList<Property>();
 		

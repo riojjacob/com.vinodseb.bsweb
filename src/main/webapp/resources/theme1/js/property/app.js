@@ -1,26 +1,32 @@
-var app = angular.module('propertyApp', ['ngSanitize']);
+var app = angular.module('propertyApp', ['ngSanitize','ngResource']);
+
+app.factory('PropertyService', function($resource) {
+	return $resource('json/property/:id');
+});
+
+app.factory('SimilarPropertyService', function($resource) {
+	return $resource('json/property/similar/:id');
+});
 
 app.config(function($logProvider) {
 	$logProvider.debugEnabled(true);
 });
 
-app.controller('propertyController', function($scope, $log, $http, $sce, $window){
+app.controller('propertyController', function($scope, $log, $sce, PropertyService, SimilarPropertyService){
 	
 	$scope.loadPropertyData = function() {
-		$http.get('property/json/12')
-		.success(function(data){
-			$scope.property = data;
-			$scope.selectedImage = angular.copy($scope.property.imageList[0]);
-			$scope.property.googleMap = $sce.trustAsHtml($scope.property.googleMap);
-			$log.debug(data);
-		})
+		PropertyService.get({id:1}, function(property) {
+			$scope.property = property;
+			$scope.selectedImage = angular.copy(property.imageList[0]);
+			$scope.property.googleMap = $sce.trustAsHtml(property.googleMap);
+			$log.debug(property);
+		});
 	};
 
 	$scope.loadSimilarData = function() {
-		$http.get('property/json/similar')
-		.success(function(data){
-			$scope.similarProperties = data;
-			$log.debug(data);
+		SimilarPropertyService.query({id:1}, function(similar) {
+			$scope.similarProperties = similar;
+			$log.debug(similar);
 		});
 	};
 	
