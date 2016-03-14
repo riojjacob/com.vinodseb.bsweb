@@ -1,5 +1,5 @@
 <!-- Property Image -->
-<div class="panel panel-default box-shadow-3dp" id="property-section-images" data-ng-controller="imageController" >
+<div class="panel panel-default box-shadow-3dp" id="property-section-images">
  	<div class="panel-heading">{{property.title}}</div>
 	<div class="panel-body">
 		
@@ -8,7 +8,7 @@
 		
 		<!-- Image Thumbs, Thumbs are hidden on small screens -->
 		<div class="row hidden-xs hidden-sm ">
-			<div class="col-sm-2" data-ng-repeat="image in images">
+			<div class="col-sm-2" data-ng-repeat="image in property.imageList">
 				<img class="img-rounded img-responsive" alt="Alternate Image" data-ng-src="{{image.path}}" data-ng-click="changeImage(image)"/>
 			</div>
 		</div>

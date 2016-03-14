@@ -151,20 +151,15 @@ html,body{
 	margin: 0 auto;	
 }
 /*******************Property Images**************************/
-#property-section-images .thumbnail{
-	margin: 0px;
-}
-#property-section-images .thumbnail img{
-	width: 100%;
-}
 #property-section-images .panel-body>img{
+	max-height: 330px;
 	margin: 0 auto;	
 }
 #property-section-images .panel-body>div{
 	padding-top: 20px;
 }
-#property-section-images .row a{
-	border:0px;
+#property-section-images div.col-sm-2>img{
+	cursor: pointer;
 }
 /*******************Common Footer**************************/
 @media (max-width: 767px) {
