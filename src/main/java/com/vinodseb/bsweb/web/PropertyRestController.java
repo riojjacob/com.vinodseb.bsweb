@@ -137,7 +137,10 @@ public class PropertyRestController {
 		List<Property> propertyList = new ArrayList<Property>();
 		
 		for(int i = 0; i < 3; i++) {
-			propertyList.add(getProperty());
+			
+			Property property = getProperty();
+			property.setId(new Long(i+1));
+			propertyList.add(property);
 		}
 		
 		return propertyList;

@@ -8,35 +8,38 @@ app.factory('SimilarPropertyService', function($resource) {
 	return $resource('json/property/similar/:id');
 });
 
-app.config(function($logProvider) {
+app.config(['$logProvider', function($logProvider) {
 	$logProvider.debugEnabled(true);
-});
+}]);
 
-app.controller('propertyController', function($scope, $log, $sce, PropertyService, SimilarPropertyService){
+app.config([ '$resourceProvider', function($resourceProvider) {
+	$resourceProvider.defaults.stripTrailingSlashes = false;
+}]);
+
+app.controller('propertyController', function( $scope, $log, $sce, PropertyService, SimilarPropertyService){
 	
 	$scope.loadPropertyData = function() {
-		PropertyService.get({id:1}, function(property) {
+		$log.debug($scope.selectedId);
+		PropertyService.get({id:$scope.selectedId}, function(property) {
 			$scope.property = property;
 			$scope.selectedImage = angular.copy(property.imageList[0]);
 			$scope.property.googleMap = $sce.trustAsHtml(property.googleMap);
-			$log.debug(property);
 		});
 	};
 
 	$scope.loadSimilarData = function() {
 		SimilarPropertyService.query({id:1}, function(similar) {
 			$scope.similarProperties = similar;
-			$log.debug(similar);
 		});
 	};
 	
 	$scope.go = function(id) {
+		$scope.selectedId = id;
 		$scope.loadPropertyData();
 	};
 	
 	$scope.changeImage = function(image) {
 		$scope.selectedImage = image;
-		$log.debug($scope.selectedImage);
 	};
 	
 	$scope.loadPropertyData();
