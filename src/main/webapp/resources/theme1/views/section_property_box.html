@@ -2,16 +2,9 @@
 
 	<div class="image">
 		<div class="dropdown">
-			<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" >
-				<span class="glyphicon glyphicon-menu-hamburger"></span>
-			</button>
-			<ul class="dropdown-menu dropdown-menu-right">
-				<li><a href="" data-toggle="modal" data-target="{{'#pm'+ prop.id}}">Quick View</a></li>
-				<li><a href="#/property/{{prop.id}}">Property Details</a></li>
-			</ul>
-		</div>
-		<a href="#/property/{{prop.id}}">
-		<!-- <a href="property" data-toggle="modal" data-target="{{'#pm'+ prop.id}}"> -->
+			<a href="#/property/{{prop.id}}" class="btn btn-sm btn-warning">View</a>
+ 		</div>
+		<a href="" data-toggle="modal" data-target="{{'#pm'+ prop.id}}">
 			<img data-ng-src="{{prop.imageList[1].path}}" class="img-responsive" alt="Cinque Terre">
 		</a>
 	</div>
@@ -95,8 +88,6 @@
 					
 				</div>
 				<div class="modal-footer">
-					<!-- <a class="btn btn-primary" href="#/property/{{prop.id}}" data-dismiss="modal">goooo</a> -->
-					<button class="btn btn-primary" type="button" data-ng-click="go('#/property/'+ prop.id)" data-dismiss="modal">View Details</button>
 					<button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
 				</div>
 			</div>
