@@ -6,11 +6,12 @@
 				<span class="glyphicon glyphicon-menu-hamburger"></span>
 			</button>
 			<ul class="dropdown-menu dropdown-menu-right">
-				<li><a href="#" data-toggle="modal" data-target="{{'#pm'+ prop.id}}">Quick View</a></li>
-				<li><a href="property/{{propety.id}}">Property Details</a></li>
+				<li><a href="" data-toggle="modal" data-target="{{'#pm'+ prop.id}}">Quick View</a></li>
+				<li><a href="#/property/{{prop.id}}">Property Details</a></li>
 			</ul>
 		</div>
-		<a href="#" data-toggle="modal" data-target="{{'#pm'+ prop.id}}">
+		<a href="#/property/{{prop.id}}">
+		<!-- <a href="property" data-toggle="modal" data-target="{{'#pm'+ prop.id}}"> -->
 			<img data-ng-src="{{prop.imageList[1].path}}" class="img-responsive" alt="Cinque Terre">
 		</a>
 	</div>
@@ -94,7 +95,8 @@
 					
 				</div>
 				<div class="modal-footer">
-					<button class="btn btn-primary" type="button" data-ng-click="go(prop.id)" data-dismiss="modal">View Details</button>
+					<!-- <a class="btn btn-primary" href="#/property/{{prop.id}}" data-dismiss="modal">goooo</a> -->
+					<button class="btn btn-primary" type="button" data-ng-click="go('#/property/'+ prop.id)" data-dismiss="modal">View Details</button>
 					<button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
 				</div>
 			</div>

@@ -22,34 +22,6 @@
 
 </head>
 <body data-ng-app="propertyApp">
-	<div class="panel panel-default" id="main-panel"  data-ng-controller="propertyController">
-		<div class="panel-heading" id="main-panel-heading">
-			<div data-ng-include="'resources/views/section_navbar.html'"></div>
-		</div>
-		<div class="panel-body" id="main-panel-body">
-			<div class="container">
-				<div class="row">
-				
-					<!-- Sidenav -->
-					<div class="hidden-xs hidden-sm col-md-3 sidenav-content">
-						<div data-ng-include="'resources/views/property/section_sidenav.html'"></div>
-					</div>
-					
-					<!-- Main Contents -->
-					<div class="col-xs-12 col-sm-12 col-md-9 page-content">
-						<div data-ng-include="'resources/views/property/section_images.html'"></div>
-						<div data-ng-include="'resources/views/property/section_details.html'"></div>
-						<div data-ng-include="'resources/views/property/section_agent.html'"></div>
-						<div data-ng-include="'resources/views/property/section_contact.html'"></div>
-						<div data-ng-include="'resources/views/property/section_location.html'"></div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-		<div class="panel-footer" id="main-panel-footer">
-			<div data-ng-include="'resources/views/section_footerbar.html'"></div>
-		</div>
-	</div>
+	<div data-ng-view></div>
 </body>
 </html>
