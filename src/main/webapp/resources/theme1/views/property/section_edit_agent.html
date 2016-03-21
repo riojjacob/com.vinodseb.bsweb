@@ -1,0 +1,38 @@
+<!-- Agent Image -->
+<div class="panel panel-default box-shadow-3dp" id="property-section-agent">
+ 	<div class="panel-heading">Realestate Agent</div>
+	<div class="panel-body">
+ 		<div class="row">
+ 		
+ 			<!-- Agent Image -->
+ 			<div class="col-sm-4">
+ 				<img class="img-rounded img-responsive" data-ng-src="{{property.agent.image.path}}"/>
+ 			</div>
+
+			<!-- Agent Image --> 			
+ 			<div class="col-sm-8">
+ 				<div class="list-group">
+					<div class="list-group-item">
+						<div class="row">
+							<label class="col-xs-4 col-sm-3">Name</label>
+							<div class="col-xs-8 col-sm-9">{{property.agent.firstName}} {{property.agent.lastName}}</div>
+						</div>
+					</div>
+					<div class="list-group-item"> 
+						<div class="row">
+							<label class="col-xs-4 col-sm-3">Email</label>
+							<div class="col-xs-8 col-sm-9">{{property.agent.email}}</div>
+						</div>
+					</div>
+					<div class="list-group-item"> 
+						<div class="row">
+							<label class="col-xs-4 col-sm-3">Phone</label>
+							<div class="col-xs-8 col-sm-9">{{property.agent.phone}}</div>
+						</div>
+					</div>
+				</div>
+ 			</div>
+ 			
+ 		</div>
+	</div>
+</div>

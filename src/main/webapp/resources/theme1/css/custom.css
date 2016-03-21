@@ -141,7 +141,7 @@ html,body{
 /*******************PAGE SECTION**************************/
 /*******************Property Details**************************/
 #property-section-details .row *{
-	padding: 0px;
+	/* padding: 0px; */
 }
 /*******************Property Agent**************************/
 #property-section-agent .list-group-item .row *{

@@ -7,6 +7,10 @@ var app = angular.module('propertyApp', ['ngSanitize','ngResource','ngRoute'])
 		templateUrl: 'resources/views/property/property.html',
 	    controller: 'PropertyController'
 	})
+	.when('/property/edit/:id', {
+		templateUrl: 'resources/views/property/property_edit.html',
+	    controller: 'PropertyEditController'
+	})
 	.when('/list', {
 		templateUrl: 'resources/views/home/home.html',
 	    controller: 'ListController'
@@ -48,4 +52,8 @@ app.controller('ListController', function($scope, $log, PropertyListService) {
 	PropertyListService.query(function(propertyList){
 		$scope.propertyList = propertyList;
 	});
+});
+
+app.controller('PropertyEditController', function($scope, $log, PropertyService){
+	
 });
